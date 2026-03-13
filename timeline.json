@@ -1,0 +1,42 @@
+[
+  {
+    "date": "2026-03-13",
+    "event": "OpenClaw 初始部署",
+    "type": "milestone"
+  },
+  {
+    "date": "2026-03-13",
+    "event": "Telegram 频道集成",
+    "type": "channel"
+  },
+  {
+    "date": "2026-03-13",
+    "event": "GitHub CLI 登录配置",
+    "type": "integration"
+  },
+  {
+    "date": "2026-03-13",
+    "event": "Ollama + Qwen 3.5 本地模型配置",
+    "type": "model"
+  },
+  {
+    "date": "2026-03-13",
+    "event": "memory-lancedb-pro 插件部署",
+    "type": "plugin"
+  },
+  {
+    "date": "2026-03-13",
+    "event": "每日晨报 Cron 任务创建",
+    "type": "automation"
+  },
+  {
+    "date": "2026-03-13",
+    "event": "每日新闻简报 Cron 任务创建",
+    "type": "automation"
+  },
+  {
+    "date": "2026-03-13",
+    "event": "Dashboard 项目启动",
+    "type": "project"
+  }
+]

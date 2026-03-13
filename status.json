@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-03-13T23:15:43.018470",
+  "host": {
+    "name": "老北京的Mac mini",
+    "chip": "Apple M4",
+    "memory": "16GB Unified",
+    "storage": "256GB SSD",
+    "os": "macOS (Darwin 25.2.0 arm64)"
+  },
+  "openclaw": {
+    "version": "2026.3.11",
+    "gateway": {
+      "status": "online",
+      "port": 18789,
+      "bind": "loopback"
+    }
+  },
+  "models": [
+    {
+      "id": "openai/gpt-5.4",
+      "name": "GPT-5.4",
+      "role": "primary",
+      "type": "cloud"
+    },
+    {
+      "id": "anthropic/claude-opus-4-6",
+      "name": "Claude Opus 4.6",
+      "role": "available",
+      "type": "cloud"
+    },
+    {
+      "id": "anthropic/claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6",
+      "role": "fallback",
+      "type": "cloud"
+    },
+    {
+      "id": "anthropic/claude-haiku-4-5",
+      "name": "Claude Haiku 4.5",
+      "role": "available",
+      "type": "cloud"
+    },
+    {
+      "id": "openai/gpt-5-mini",
+      "name": "GPT-5 Mini",
+      "role": "extraction",
+      "type": "cloud"
+    },
+    {
+      "id": "openai/gpt-5.3-codex",
+      "name": "GPT-5.3 Codex",
+      "role": "available",
+      "type": "cloud"
+    },
+    {
+      "id": "ollama/qwen3.5:9b-q4_k_m",
+      "name": "Qwen 3.5 9B",
+      "role": "local",
+      "type": "local"
+    },
+    {
+      "id": "omlx/Qwen3.5-9B-MLX-4bit",
+      "name": "Qwen 3.5 9B MLX",
+      "role": "local",
+      "type": "local"
+    }
+  ],
+  "plugins": [
+    {
+      "id": "memory-lancedb-pro",
+      "version": "1.1.0-beta.8",
+      "status": "active",
+      "features": [
+        "hybrid retrieval",
+        "smart extraction",
+        "cross-encoder rerank",
+        "multi-scope"
+      ],
+      "embedding": "Jina v5-text-small",
+      "reranker": "Jina reranker-v3",
+      "llm": "GPT-5 Mini"
+    }
+  ],
+  "channels": [
+    {
+      "id": "telegram",
+      "status": "active",
+      "type": "messaging"
+    }
+  ],
+  "memory": {
+    "total_entries": 10,
+    "retrieval_mode": "hybrid",
+    "db_path": "~/.openclaw/memory/lancedb-pro"
+  },
+  "cron_jobs": [
+    {
+      "name": "daily-morning-report",
+      "schedule": "07:00 daily",
+      "model": "Claude Sonnet 4.6"
+    },
+    {
+      "name": "daily-news-briefing",
+      "schedule": "07:05 daily",
+      "model": "Claude Sonnet 4.6"
+    }
+  ],
+  "skills_count": 14,
+  "agents": [
+    {
+      "id": "main",
+      "model": "openai/gpt-5.4",
+      "tools": "full"
+    }
+  ]
+}
