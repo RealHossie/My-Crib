@@ -38,5 +38,30 @@
     "date": "2026-03-13",
     "event": "Dashboard 项目启动",
     "type": "project"
+  },
+  {
+    "date": "2026-03-14",
+    "event": "默认模型切换为 Claude Opus 4.6（主）/ GPT-5.4（备）",
+    "type": "model"
+  },
+  {
+    "date": "2026-03-14",
+    "event": "新增 Skills：agent-cost-monitor、skill-finder-cn、金刚罩、token-ledger、model-usage",
+    "type": "plugin"
+  },
+  {
+    "date": "2026-03-14",
+    "event": "新增 Cron：daily-token-ledger（00:10）+ system-health-patrol（04:00）",
+    "type": "automation"
+  },
+  {
+    "date": "2026-03-14",
+    "event": "OpenClaw 升级至 v2026.3.12",
+    "type": "milestone"
+  },
+  {
+    "date": "2026-03-14",
+    "event": "记忆库增至 20 条（双倍）",
+    "type": "milestone"
   }
 ]
