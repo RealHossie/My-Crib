@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T03:00:00.000000",
+  "generated_at": "2026-03-15T03:00:00.000000",
   "host": {
     "name": "老北京的Mac mini",
     "chip": "Apple M4",
@@ -8,10 +8,10 @@
     "os": "macOS (Darwin 25.2.0 arm64)"
   },
   "openclaw": {
-    "version": "2026.3.12",
+    "version": "2026.3.13",
     "gateway": {
       "status": "online",
-      "pid": 22192,
+      "pid": 46127,
       "port": 18789,
       "bind": "loopback"
     }
@@ -42,15 +42,15 @@
       "type": "cloud"
     },
     {
-      "id": "openai/gpt-5-mini",
-      "name": "GPT-5 Mini",
-      "role": "extraction",
-      "type": "cloud"
-    },
-    {
       "id": "openai/gpt-5.3-codex",
       "name": "GPT-5.3 Codex",
       "role": "available",
+      "type": "cloud"
+    },
+    {
+      "id": "openai/gpt-5-mini",
+      "name": "GPT-5 Mini",
+      "role": "extraction",
       "type": "cloud"
     },
     {
@@ -79,7 +79,7 @@
       ],
       "embedding": "Jina v5-text-small",
       "reranker": "Jina reranker-v3",
-      "llm": "GPT-5 Mini"
+      "llm": "GPT-5.4"
     }
   ],
   "channels": [
@@ -87,21 +87,21 @@
       "id": "telegram",
       "status": "active",
       "type": "messaging"
+    },
+    {
+      "id": "feishu",
+      "status": "active",
+      "type": "messaging"
     }
   ],
   "memory": {
-    "total_entries": 20,
+    "total_entries": 37,
     "retrieval_mode": "hybrid",
     "db_path": "~/.openclaw/memory/lancedb-pro",
     "scopes": {
-      "agent:main": 20
-    },
-    "categories": {
-      "fact": 5,
-      "other": 5,
-      "preference": 3,
-      "decision": 4,
-      "entity": 3
+      "agent:main": 32,
+      "agent:queen-secretary": 2,
+      "agent:jazmin": 3
     }
   },
   "cron_jobs": [
@@ -109,45 +109,48 @@
       "name": "daily-token-ledger",
       "schedule": "00:10 daily",
       "model": "Claude Sonnet 4.6",
-      "enabled": true
+      "enabled": true,
+      "last_status": "error"
     },
     {
       "name": "dashboard-update",
       "schedule": "03:00 daily",
       "model": "Claude Sonnet 4.6",
-      "enabled": true
+      "enabled": true,
+      "last_status": "ok"
     },
     {
       "name": "system-health-patrol",
       "schedule": "04:00 daily",
       "model": "Claude Sonnet 4.6",
-      "enabled": true
+      "enabled": true,
+      "last_status": "error"
     },
     {
-      "name": "daily-morning-report",
-      "schedule": "07:00 daily",
+      "name": "morning-post-pdf",
+      "schedule": "06:45 daily",
       "model": "Claude Sonnet 4.6",
-      "enabled": true
-    },
-    {
-      "name": "daily-news-briefing",
-      "schedule": "07:05 daily",
-      "model": "Claude Sonnet 4.6",
-      "enabled": true
+      "enabled": true,
+      "last_status": "pending"
     }
   ],
   "skills": {
-    "total_installed": 19,
-    "total_available": 55,
+    "total_installed": 25,
+    "total_available": 61,
     "ready": [
       "apple-notes",
       "clawhub",
       "coding-agent",
+      "feishu-doc",
+      "feishu-drive",
+      "feishu-perm",
+      "feishu-wiki",
       "gh-issues",
       "github",
       "healthcheck",
       "imsg",
       "model-usage",
+      "node-connect",
       "openai-image-gen",
       "openai-whisper",
       "openai-whisper-api",
@@ -156,6 +159,7 @@
       "video-frames",
       "weather",
       "agent-cost-monitor",
+      "memory-lancedb-pro-skill",
       "skill-finder-cn",
       "金刚罩",
       "token-ledger"
@@ -166,6 +170,24 @@
       "id": "main",
       "model": "anthropic/claude-opus-4-6",
       "tools": "full"
+    },
+    {
+      "id": "queen-secretary",
+      "name": "女王小秘",
+      "model": "anthropic/claude-sonnet-4-6",
+      "tools": "full"
+    },
+    {
+      "id": "jazmin",
+      "name": "桐仔助手",
+      "model": "anthropic/claude-sonnet-4-6",
+      "tools": "full"
     }
-  ]
+  ],
+  "system": {
+    "disk_total": "228GB",
+    "disk_used": "11GB",
+    "disk_avail": "152GB",
+    "disk_capacity": "8%"
+  }
 }

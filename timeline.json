@@ -63,5 +63,35 @@
     "date": "2026-03-14",
     "event": "记忆库增至 20 条（双倍）",
     "type": "milestone"
+  },
+  {
+    "date": "2026-03-15",
+    "event": "OpenClaw 升级至 v2026.3.13（Cron 死锁修复 / Telegram 稳定性 / Compaction 语言连续性）",
+    "type": "milestone"
+  },
+  {
+    "date": "2026-03-15",
+    "event": "新增 Agent：jazmin（桐仔助手）",
+    "type": "agent"
+  },
+  {
+    "date": "2026-03-15",
+    "event": "Feishu 频道正式激活（多 agent 绑定）",
+    "type": "channel"
+  },
+  {
+    "date": "2026-03-15",
+    "event": "Morning Post PDF Cron 上线（06:45），合并取代纯文字晨报 + 新闻简报",
+    "type": "automation"
+  },
+  {
+    "date": "2026-03-15",
+    "event": "新增 Skill：memory-lancedb-pro-skill（插件官方安装升级知识库）",
+    "type": "plugin"
+  },
+  {
+    "date": "2026-03-15",
+    "event": "记忆库增至 37 条，扩展至 3 scopes（main + queen-secretary + jazmin）",
+    "type": "milestone"
   }
 ]
