@@ -78,6 +78,28 @@
     padding: 0 24px 60px;
   }
 
+  /* ─── Skills grid ─── */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .skill-tag {
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    border-radius: 4px;
+    font-size: 0.72rem;
+    color: var(--green);
+    letter-spacing: 0.05em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .skill-tag:hover {
+    border-color: var(--cyan);
+    box-shadow: 0 0 10px var(--cyan-glow);
+    color: var(--cyan);
+  }
+
   /* ─── Hero ─── */
   .hero {
     text-align: center;
@@ -966,6 +988,18 @@ document.getElementById('gate-pwd').addEventListener('keydown', function(e){
     </div>
   </section>
 
+  <!-- ─── AGENTS ─── -->
+  <section>
+    <div class="section-title"><span class="dot"></span>AGENT ROSTER</div>
+    <div class="terminal-grid" id="agents-grid"></div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section>
+    <div class="section-title"><span class="dot"></span>SKILLS ARSENAL</div>
+    <div class="skills-grid" id="skills-grid"></div>
+  </section>
+
   <!-- ─── TIMELINE ─── -->
   <section>
     <div class="section-title"><span class="dot"></span>EVOLUTION TIMELINE</div>
@@ -1187,6 +1221,29 @@ function renderCron(jobs) {
   `).join('<br>');
 }
 
+function renderAgents(agents) {
+  const el = document.getElementById('agents-grid');
+  el.innerHTML = agents.map(a => `
+    <div class="terminal-box">
+      <div class="terminal-topbar">
+        <div class="terminal-dot r"></div><div class="terminal-dot y"></div><div class="terminal-dot g"></div>
+        <span class="terminal-title">${a.name || a.id}</span>
+      </div>
+      <div>
+        ${kv('id', a.id)}
+        ${kv('model', a.model)}
+        ${kv('tools', a.tools)} ${a.tools === 'full' ? '<span class="t-tag-cyan">UNRESTRICTED</span>' : '<span class="t-tag-purple">RESTRICTED</span>'}
+        ${a.memory_scope ? kv('memory', a.memory_scope) : ''}
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderSkills(skills) {
+  const el = document.getElementById('skills-grid');
+  el.innerHTML = skills.map(s => `<span class="skill-tag">${s}</span>`).join('');
+}
+
 function renderModels(models) {
   const cloudEl = document.getElementById('cloud-models');
   const localEl = document.getElementById('local-models');
@@ -1262,7 +1319,7 @@ async function loadData() {
   const memEntries = status.memory?.total_entries ?? 0;
   const modelCount = status.models?.length ?? 0;
   const cronCount  = status.cron_jobs?.length ?? 0;
-  const skillsCount= status.skills_count ?? 0;
+  const skillsCount= status.skills?.total_installed ?? status.skills_count ?? 0;
 
   setTimeout(() => {
     countUp(document.getElementById('mem-entries'), memEntries);
@@ -1283,6 +1340,12 @@ async function loadData() {
   if (status.channels) renderChannels(status.channels);
   if (status.memory)   renderMemory(status.memory);
   if (status.cron_jobs)renderCron(status.cron_jobs);
+
+  // Agents
+  if (status.agents) renderAgents(status.agents);
+
+  // Skills
+  if (status.skills?.ready) renderSkills(status.skills.ready);
 
   // Timeline
   renderTimeline(timeline);
