@@ -873,18 +873,18 @@ document.getElementById('gate-pwd').addEventListener('keydown', function(e){
         <div class="arch-box">
           <span class="icon">🤖</span>
           <div class="label">AGENTS</div>
-          <div class="sub">main · sub</div>
+          <div class="sub" id="arch-agents">3 agents</div>
         </div>
-        <div class="arch-node-label">full tools</div>
+        <div class="arch-node-label" id="arch-agents-label">main + 2 sub</div>
       </div>
       <div class="arch-line"><div class="arch-particle"></div><div class="arch-particle"></div><div class="arch-particle"></div></div>
       <div class="arch-node">
         <div class="arch-box">
           <span class="icon">📡</span>
           <div class="label">CHANNELS</div>
-          <div class="sub">Telegram</div>
+          <div class="sub" id="arch-channels">Telegram · Feishu</div>
         </div>
-        <div class="arch-node-label">active</div>
+        <div class="arch-node-label" id="arch-channels-label">active</div>
       </div>
     </div>
   </section>
@@ -1313,6 +1313,20 @@ async function loadData() {
   if (status.openclaw?.gateway) {
     document.getElementById('arch-gw').textContent = ':' + status.openclaw.gateway.port;
     document.getElementById('gw-bind').textContent  = status.openclaw.gateway.bind + ' · port ' + status.openclaw.gateway.port;
+  }
+
+  // Arch dynamic
+  if (status.agents) {
+    const agentCount = status.agents.length;
+    document.getElementById('arch-agents').textContent = agentCount + ' agents';
+    const names = status.agents.map(a => a.name || a.id).join(' · ');
+    document.getElementById('arch-agents-label').textContent = names;
+  }
+  if (status.channels) {
+    const chNames = status.channels.map(c => c.id.charAt(0).toUpperCase() + c.id.slice(1)).join(' · ');
+    document.getElementById('arch-channels').textContent = chNames;
+    const activeCount = status.channels.filter(c => c.status === 'active').length;
+    document.getElementById('arch-channels-label').textContent = activeCount + ' active';
   }
 
   // Status counters
