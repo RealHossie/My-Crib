@@ -91,7 +91,17 @@
   },
   {
     "date": "2026-03-15",
-    "event": "记忆库增至 37 条，扩展至 3 scopes（main + queen-secretary + jazmin）",
+    "event": "memory-lancedb-pro 优化：Smart Extraction LLM 升级至 GPT-5.4，开启 filterNoise + Weibull 衰减",
+    "type": "plugin"
+  },
+  {
+    "date": "2026-03-15",
+    "event": "女王小秘 & 桐仔助手权限收紧（deny: runtime/browser/canvas/gateway/nodes/sessions_spawn/sessions_send）",
+    "type": "security"
+  },
+  {
+    "date": "2026-03-15",
+    "event": "记忆库增至 37 条，3 scopes 完全隔离（main:32 / queen:2 / jazmin:3）",
     "type": "milestone"
   }
 ]

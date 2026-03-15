@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-15T03:00:00.000000",
+  "generated_at": "2026-03-15T08:50:00.000000",
   "host": {
     "name": "老北京的Mac mini",
     "chip": "Apple M4",
@@ -11,7 +11,6 @@
     "version": "2026.3.13",
     "gateway": {
       "status": "online",
-      "pid": 46127,
       "port": 18789,
       "bind": "loopback"
     }
@@ -50,7 +49,7 @@
     {
       "id": "openai/gpt-5-mini",
       "name": "GPT-5 Mini",
-      "role": "extraction",
+      "role": "available",
       "type": "cloud"
     },
     {
@@ -73,11 +72,13 @@
       "status": "active",
       "features": [
         "hybrid retrieval",
-        "smart extraction",
-        "cross-encoder rerank",
-        "multi-scope"
+        "smart extraction (GPT-5.4)",
+        "cross-encoder rerank (Jina v3)",
+        "noise filtering",
+        "Weibull decay lifecycle",
+        "multi-scope isolation"
       ],
-      "embedding": "Jina v5-text-small",
+      "embedding": "Jina v5-text-small (1024-dim)",
       "reranker": "Jina reranker-v3",
       "llm": "GPT-5.4"
     }
@@ -117,21 +118,21 @@
       "schedule": "03:00 daily",
       "model": "Claude Sonnet 4.6",
       "enabled": true,
-      "last_status": "ok"
+      "last_status": "error"
     },
     {
       "name": "system-health-patrol",
       "schedule": "04:00 daily",
       "model": "Claude Sonnet 4.6",
       "enabled": true,
-      "last_status": "error"
+      "last_status": "ok"
     },
     {
       "name": "morning-post-pdf",
       "schedule": "06:45 daily",
       "model": "Claude Sonnet 4.6",
       "enabled": true,
-      "last_status": "pending"
+      "last_status": "ok"
     }
   ],
   "skills": {
@@ -168,26 +169,30 @@
   "agents": [
     {
       "id": "main",
+      "name": "主谋",
       "model": "anthropic/claude-opus-4-6",
-      "tools": "full"
+      "tools": "full",
+      "memory_scope": "agent:main (32 entries)"
     },
     {
       "id": "queen-secretary",
-      "name": "女王小秘",
+      "name": "女王小秘（旺财）",
       "model": "anthropic/claude-sonnet-4-6",
-      "tools": "full"
+      "tools": "full (deny: runtime, browser, canvas, gateway, nodes, sessions_spawn, sessions_send)",
+      "memory_scope": "agent:queen-secretary (2 entries)"
     },
     {
       "id": "jazmin",
-      "name": "桐仔助手",
+      "name": "桐仔助手（闵浩杨）",
       "model": "anthropic/claude-sonnet-4-6",
-      "tools": "full"
+      "tools": "full (deny: runtime, browser, canvas, gateway, nodes, sessions_spawn, sessions_send)",
+      "memory_scope": "agent:jazmin (3 entries)"
     }
   ],
   "system": {
     "disk_total": "228GB",
-    "disk_used": "11GB",
-    "disk_avail": "152GB",
-    "disk_capacity": "8%"
+    "disk_used": "15GB",
+    "disk_avail": "135GB",
+    "disk_capacity": "11%"
   }
 }
