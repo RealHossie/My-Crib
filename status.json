@@ -1,18 +1,20 @@
 {
-  "generated_at": "2026-03-15T08:50:00.000000",
+  "generated_at": "2026-03-16T03:00:00.000000",
   "host": {
     "name": "老北京的Mac mini",
     "chip": "Apple M4",
     "memory": "16GB Unified",
     "storage": "256GB SSD",
-    "os": "macOS (Darwin 25.2.0 arm64)"
+    "os": "macOS (Darwin 25.3.0 arm64)"
   },
   "openclaw": {
     "version": "2026.3.13",
     "gateway": {
       "status": "online",
+      "pid": 1181,
       "port": 18789,
-      "bind": "loopback"
+      "bind": "loopback",
+      "memory_mb": 865.6
     }
   },
   "models": [
@@ -96,43 +98,50 @@
     }
   ],
   "memory": {
-    "total_entries": 37,
+    "total_entries": 44,
     "retrieval_mode": "hybrid",
     "db_path": "~/.openclaw/memory/lancedb-pro",
     "scopes": {
-      "agent:main": 32,
+      "agent:main": 39,
       "agent:queen-secretary": 2,
       "agent:jazmin": 3
     }
   },
   "cron_jobs": [
     {
+      "id": "8aaa964a-506e-437c-a222-63c1a94a78f7",
       "name": "daily-token-ledger",
       "schedule": "00:10 daily",
       "model": "Claude Sonnet 4.6",
       "enabled": true,
-      "last_status": "error"
+      "last_status": "error",
+      "last_error": "Channel is required when multiple channels configured"
     },
     {
+      "id": "173a412c-3a93-447f-90b0-b161a2857fb0",
       "name": "dashboard-update",
       "schedule": "03:00 daily",
       "model": "Claude Sonnet 4.6",
       "enabled": true,
-      "last_status": "error"
+      "last_status": "running"
     },
     {
+      "id": "cd2a4df2-f464-4e00-9ae8-4f80d9539862",
       "name": "system-health-patrol",
       "schedule": "04:00 daily",
       "model": "Claude Sonnet 4.6",
       "enabled": true,
-      "last_status": "ok"
+      "last_status": "error",
+      "last_error": "Message delivery failed"
     },
     {
+      "id": "fdc7c37e-0b9f-4be0-878a-ab2582c77b47",
       "name": "morning-post-pdf",
       "schedule": "06:45 daily",
       "model": "Claude Sonnet 4.6",
       "enabled": true,
-      "last_status": "ok"
+      "last_status": "error",
+      "last_error": "Message delivery failed"
     }
   ],
   "skills": {
@@ -172,7 +181,7 @@
       "name": "主谋",
       "model": "anthropic/claude-opus-4-6",
       "tools": "full",
-      "memory_scope": "agent:main (32 entries)"
+      "memory_scope": "agent:main (39 entries)"
     },
     {
       "id": "queen-secretary",
@@ -191,8 +200,8 @@
   ],
   "system": {
     "disk_total": "228GB",
-    "disk_used": "15GB",
-    "disk_avail": "135GB",
-    "disk_capacity": "11%"
+    "disk_used": "12GB",
+    "disk_avail": "160GB",
+    "disk_capacity": "7%"
   }
 }
