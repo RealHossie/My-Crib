@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-16T03:00:00.000000",
+  "generated_at": "2026-03-17T03:00:00.000000",
   "host": {
     "name": "老北京的Mac mini",
     "chip": "Apple M4",
@@ -98,12 +98,12 @@
     }
   ],
   "memory": {
-    "total_entries": 44,
+    "total_entries": 49,
     "retrieval_mode": "hybrid",
     "db_path": "~/.openclaw/memory/lancedb-pro",
     "scopes": {
-      "agent:main": 39,
-      "agent:queen-secretary": 2,
+      "agent:main": 43,
+      "agent:queen-secretary": 3,
       "agent:jazmin": 3
     }
   },
@@ -131,8 +131,7 @@
       "schedule": "04:00 daily",
       "model": "Claude Sonnet 4.6",
       "enabled": true,
-      "last_status": "error",
-      "last_error": "Message delivery failed"
+      "last_status": "ok"
     },
     {
       "id": "fdc7c37e-0b9f-4be0-878a-ab2582c77b47",
@@ -181,14 +180,14 @@
       "name": "主谋",
       "model": "anthropic/claude-opus-4-6",
       "tools": "full",
-      "memory_scope": "agent:main (39 entries)"
+      "memory_scope": "agent:main (43 entries)"
     },
     {
       "id": "queen-secretary",
       "name": "女王小秘（旺财）",
       "model": "anthropic/claude-sonnet-4-6",
       "tools": "full (deny: runtime, browser, canvas, gateway, nodes, sessions_spawn, sessions_send)",
-      "memory_scope": "agent:queen-secretary (2 entries)"
+      "memory_scope": "agent:queen-secretary (3 entries)"
     },
     {
       "id": "jazmin",
@@ -201,7 +200,7 @@
   "system": {
     "disk_total": "228GB",
     "disk_used": "12GB",
-    "disk_avail": "160GB",
+    "disk_avail": "159GB",
     "disk_capacity": "7%"
   }
 }
