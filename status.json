@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-17T03:00:00.000000",
+  "generated_at": "2026-03-18T03:00:00.000000",
   "host": {
     "name": "老北京的Mac mini",
     "chip": "Apple M4",
@@ -11,7 +11,7 @@
     "version": "2026.3.13",
     "gateway": {
       "status": "online",
-      "pid": 1181,
+      "pid": 3224,
       "port": 18789,
       "bind": "loopback",
       "memory_mb": 865.6
@@ -114,8 +114,7 @@
       "schedule": "00:10 daily",
       "model": "Claude Sonnet 4.6",
       "enabled": true,
-      "last_status": "error",
-      "last_error": "Channel is required when multiple channels configured"
+      "last_status": "ok"
     },
     {
       "id": "173a412c-3a93-447f-90b0-b161a2857fb0",
@@ -139,8 +138,7 @@
       "schedule": "06:45 daily",
       "model": "Claude Sonnet 4.6",
       "enabled": true,
-      "last_status": "error",
-      "last_error": "Message delivery failed"
+      "last_status": "ok"
     }
   ],
   "skills": {

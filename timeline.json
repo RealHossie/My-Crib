@@ -103,5 +103,15 @@
     "date": "2026-03-15",
     "event": "记忆库增至 37 条，3 scopes 完全隔离（main:32 / queen:2 / jazmin:3）",
     "type": "milestone"
+  },
+  {
+    "date": "2026-03-17",
+    "event": "Cron 投递修复：morning-post-pdf & daily-token-ledger 指定 channel=telegram，恢复正常",
+    "type": "automation"
+  },
+  {
+    "date": "2026-03-17",
+    "event": "记忆库增至 49 条（main:43 / queen:3 / jazmin:3）",
+    "type": "milestone"
   }
 ]
