@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-18T03:00:00.000000",
+  "generated_at": "2026-03-19T03:00:00.000000",
   "host": {
     "name": "老北京的Mac mini",
     "chip": "Apple M4",
@@ -14,7 +14,7 @@
       "pid": 3224,
       "port": 18789,
       "bind": "loopback",
-      "memory_mb": 865.6
+      "memory_mb": 663
     }
   },
   "models": [
@@ -198,7 +198,7 @@
   "system": {
     "disk_total": "228GB",
     "disk_used": "12GB",
-    "disk_avail": "159GB",
+    "disk_avail": "158GB",
     "disk_capacity": "7%"
   }
 }
