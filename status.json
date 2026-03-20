@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-20T03:00:00.000000",
+  "generated_at": "2026-03-21T03:00:00.000000",
   "host": {
     "name": "老北京的Mac mini",
     "chip": "Apple M4",
@@ -98,11 +98,11 @@
     }
   ],
   "memory": {
-    "total_entries": 54,
+    "total_entries": 71,
     "retrieval_mode": "hybrid",
     "db_path": "~/.openclaw/memory/lancedb-pro",
     "scopes": {
-      "agent:main": 48,
+      "agent:main": 65,
       "agent:queen-secretary": 3,
       "agent:jazmin": 3
     }
@@ -114,7 +114,7 @@
       "schedule": "00:10 daily",
       "model": "Claude Sonnet 4.6",
       "enabled": true,
-      "last_status": "error"
+      "last_status": "ok"
     },
     {
       "id": "173a412c-3a93-447f-90b0-b161a2857fb0",
@@ -178,7 +178,7 @@
       "name": "主谋",
       "model": "anthropic/claude-opus-4-6",
       "tools": "full",
-      "memory_scope": "agent:main (48 entries)"
+      "memory_scope": "agent:main (65 entries)"
     },
     {
       "id": "queen-secretary",
@@ -198,7 +198,7 @@
   "system": {
     "disk_total": "228GB",
     "disk_used": "12GB",
-    "disk_avail": "156GB",
-    "disk_capacity": "7%"
+    "disk_avail": "150GB",
+    "disk_capacity": "8%"
   }
 }
