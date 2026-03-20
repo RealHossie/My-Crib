@@ -273,6 +273,74 @@
   }
   .arch-node-label { font-size: 0.68rem; color: #558855; letter-spacing: 0.05em; }
 
+  /* ─── Expanded arch rows ─── */
+  .arch-expand-row {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 18px;
+    padding: 0 10px;
+  }
+  .arch-expand-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 16px 20px;
+    min-width: 180px;
+    max-width: 260px;
+    flex: 1;
+    position: relative;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .arch-expand-card:hover {
+    border-color: var(--green);
+    box-shadow: 0 0 16px rgba(0,255,65,0.2);
+  }
+  .arch-expand-card .card-icon { font-size: 1.4rem; margin-bottom: 6px; display: block; }
+  .arch-expand-card .card-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.72rem;
+    color: var(--green);
+    letter-spacing: 0.06em;
+    margin-bottom: 6px;
+  }
+  .arch-expand-card .card-detail { font-size: 0.6rem; color: #66aa66; line-height: 1.6; }
+  .arch-expand-card .card-badge {
+    display: inline-block;
+    font-size: 0.5rem;
+    padding: 2px 7px;
+    border-radius: 3px;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    margin-top: 6px;
+  }
+  .card-badge.main { background: rgba(0,255,65,0.15); color: var(--green); border: 1px solid var(--green-dim); }
+  .card-badge.sub { background: rgba(0,180,255,0.12); color: #00b4ff; border: 1px solid rgba(0,180,255,0.3); }
+  .card-badge.channel-on { background: rgba(0,255,65,0.15); color: var(--green); border: 1px solid var(--green-dim); }
+
+  .subagent-section {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px dashed rgba(0,255,65,0.2);
+  }
+  .subagent-section .sub-title {
+    font-size: 0.52rem;
+    color: #558855;
+    letter-spacing: 0.08em;
+    margin-bottom: 5px;
+  }
+  .subagent-tag {
+    display: inline-block;
+    font-size: 0.48rem;
+    padding: 2px 6px;
+    margin: 2px 3px;
+    border-radius: 3px;
+    background: rgba(0,180,255,0.08);
+    color: #00b4ff;
+    border: 1px solid rgba(0,180,255,0.2);
+  }
+
   /* ─── Status panel ─── */
   .status-grid {
     display: grid;
@@ -666,10 +734,14 @@
     .model-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
     .terminal-grid { grid-template-columns: 1fr; }
     .status-grid { grid-template-columns: repeat(2, 1fr); }
+    .arch-expand-row { gap: 10px; }
+    .arch-expand-card { min-width: 140px; padding: 12px 14px; }
   }
   @media (max-width: 480px) {
     .status-grid { grid-template-columns: 1fr; }
     .arch-container { padding: 10px 0; }
+    .arch-expand-row { flex-direction: column; align-items: center; }
+    .arch-expand-card { min-width: 90%; max-width: 100%; }
   }
   /* ─── AUTH GATE ─── */
   #auth-gate {
@@ -875,7 +947,7 @@ document.getElementById('gate-pwd').addEventListener('keydown', function(e){
           <div class="label">AGENTS</div>
           <div class="sub" id="arch-agents">3 agents</div>
         </div>
-        <div class="arch-node-label" id="arch-agents-label">main + 2 sub</div>
+        <div class="arch-node-label" id="arch-agents-label">→ expand below</div>
       </div>
       <div class="arch-line"><div class="arch-particle"></div><div class="arch-particle"></div><div class="arch-particle"></div></div>
       <div class="arch-node">
@@ -884,9 +956,15 @@ document.getElementById('gate-pwd').addEventListener('keydown', function(e){
           <div class="label">CHANNELS</div>
           <div class="sub" id="arch-channels">Telegram · Feishu</div>
         </div>
-        <div class="arch-node-label" id="arch-channels-label">active</div>
+        <div class="arch-node-label" id="arch-channels-label">→ expand below</div>
       </div>
     </div>
+
+    <!-- Expanded Agent Cards -->
+    <div class="arch-expand-row" id="arch-agents-expand"></div>
+
+    <!-- Expanded Channel Cards -->
+    <div class="arch-expand-row" id="arch-channels-expand"></div>
   </section>
 
   <!-- ─── STATUS ─── -->
@@ -1319,14 +1397,57 @@ async function loadData() {
   if (status.agents) {
     const agentCount = status.agents.length;
     document.getElementById('arch-agents').textContent = agentCount + ' agents';
-    const names = status.agents.map(a => a.name || a.id).join(' · ');
-    document.getElementById('arch-agents-label').textContent = names;
+    document.getElementById('arch-agents-label').textContent = '↓ details';
+
+    // Render expanded agent cards
+    const agentsExpand = document.getElementById('arch-agents-expand');
+    const subagentExamples = ['coding-agent', 'morning-post', 'gh-issues', 'token-ledger'];
+    agentsExpand.innerHTML = status.agents.map(a => {
+      const isMain = a.id === 'main';
+      const emoji = isMain ? '🫡' : (a.id === 'queen-secretary' ? '👑' : '🧸');
+      const badge = `<span class="card-badge main">PRIMARY AGENT</span>`;
+      const subSection = isMain ? `
+        <div class="subagent-section">
+          <div class="sub-title">SPAWNS SUBAGENTS</div>
+          ${subagentExamples.map(s => `<span class="subagent-tag">⚡ ${s}</span>`).join('')}
+        </div>
+      ` : '';
+      const toolsInfo = isMain ? 'FULL ACCESS' : 'RESTRICTED';
+      return `
+        <div class="arch-expand-card">
+          <span class="card-icon">${emoji}</span>
+          <div class="card-name">${a.name || a.id}</div>
+          <div class="card-detail">
+            model: ${(a.model || '').split('/').pop()}<br>
+            tools: ${toolsInfo}<br>
+            ${a.memory_scope ? 'memory: ' + a.memory_scope : ''}
+          </div>
+          ${badge}
+          ${subSection}
+        </div>
+      `;
+    }).join('');
   }
   if (status.channels) {
     const chNames = status.channels.map(c => c.id.charAt(0).toUpperCase() + c.id.slice(1)).join(' · ');
     document.getElementById('arch-channels').textContent = chNames;
     const activeCount = status.channels.filter(c => c.status === 'active').length;
-    document.getElementById('arch-channels-label').textContent = activeCount + ' active';
+    document.getElementById('arch-channels-label').textContent = '↓ details';
+
+    // Render expanded channel cards
+    const channelsExpand = document.getElementById('arch-channels-expand');
+    const chEmoji = { telegram: '✈️', feishu: '🐦' };
+    channelsExpand.innerHTML = status.channels.map(c => `
+      <div class="arch-expand-card">
+        <span class="card-icon">${chEmoji[c.id] || '📡'}</span>
+        <div class="card-name">${c.id.toUpperCase()}</div>
+        <div class="card-detail">
+          type: ${c.type}<br>
+          status: ${c.status}
+        </div>
+        <span class="card-badge channel-on">${c.status === 'active' ? 'ONLINE' : 'OFFLINE'}</span>
+      </div>
+    `).join('');
   }
 
   // Status counters
