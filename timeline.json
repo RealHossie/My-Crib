@@ -123,5 +123,20 @@
     "date": "2026-03-21",
     "event": "记忆库增至 71 条（main:65 / queen:3 / jazmin:3）",
     "type": "milestone"
+  },
+  {
+    "date": "2026-03-22",
+    "event": "新增 Cron：gaigao-incremental（周一至六 02:00）+ gaigao-full（周日 02:00）——盖高全量/增量采集",
+    "type": "automation"
+  },
+  {
+    "date": "2026-03-22",
+    "event": "Card Sniper 项目里程碑：盖高 API 逆向完成，upk token 更新（购买 98 元会员），IP 被封待解封",
+    "type": "project"
+  },
+  {
+    "date": "2026-03-23",
+    "event": "记忆库增至 121 条（main:115 / queen:3 / jazmin:3）",
+    "type": "milestone"
   }
 ]
