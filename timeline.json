@@ -138,5 +138,15 @@
     "date": "2026-03-23",
     "event": "记忆库增至 121 条（main:115 / queen:3 / jazmin:3）",
     "type": "milestone"
+  },
+  {
+    "date": "2026-03-23",
+    "event": "Card Sniper — eBay Developer Account Production 激活，Browse API 验证成功（74人追踪名单，sold listings 爬虫完成，前端移动端全适配）",
+    "type": "project"
+  },
+  {
+    "date": "2026-03-24",
+    "event": "记忆库增至 137 条（main:131 / queen:3 / jazmin:3）",
+    "type": "milestone"
   }
 ]

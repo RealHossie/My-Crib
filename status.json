@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-23T03:00:00.000000",
+  "generated_at": "2026-03-24T03:00:00.000000",
   "host": {
     "name": "老北京的Mac mini",
     "chip": "Apple M4",
@@ -11,10 +11,10 @@
     "version": "2026.3.13",
     "gateway": {
       "status": "online",
-      "pid": 2394,
+      "pid": 20623,
       "port": 18789,
       "bind": "loopback",
-      "memory_mb": 85
+      "memory_mb": 1150
     }
   },
   "models": [
@@ -98,11 +98,11 @@
     }
   ],
   "memory": {
-    "total_entries": 121,
+    "total_entries": 137,
     "retrieval_mode": "hybrid",
     "db_path": "~/.openclaw/memory/lancedb-pro",
     "scopes": {
-      "agent:main": 115,
+      "agent:main": 131,
       "agent:queen-secretary": 3,
       "agent:jazmin": 3
     }
@@ -111,50 +111,50 @@
     {
       "id": "8aaa964a-506e-437c-a222-63c1a94a78f7",
       "name": "daily-token-ledger",
-      "schedule": "00:10 daily",
-      "model": "Claude Sonnet 4.6",
-      "enabled": true,
-      "last_status": "ok"
+      "schedule": "10 0 * * *",
+      "status": "active",
+      "last_run": "ok",
+      "consecutive_errors": 0
     },
     {
       "id": "173a412c-3a93-447f-90b0-b161a2857fb0",
       "name": "dashboard-update",
-      "schedule": "03:00 daily",
-      "model": "Claude Sonnet 4.6",
-      "enabled": true,
-      "last_status": "ok"
+      "schedule": "0 3 * * *",
+      "status": "active",
+      "last_run": "ok",
+      "consecutive_errors": 0
     },
     {
       "id": "cd2a4df2-f464-4e00-9ae8-4f80d9539862",
       "name": "system-health-patrol",
-      "schedule": "04:00 daily",
-      "model": "Claude Sonnet 4.6",
-      "enabled": true,
-      "last_status": "ok"
+      "schedule": "0 4 * * *",
+      "status": "active",
+      "last_run": "ok",
+      "consecutive_errors": 0
     },
     {
       "id": "fdc7c37e-0b9f-4be0-878a-ab2582c77b47",
       "name": "morning-post-pdf",
-      "schedule": "06:45 daily",
-      "model": "Claude Sonnet 4.6",
-      "enabled": true,
-      "last_status": "error"
+      "schedule": "45 6 * * *",
+      "status": "active",
+      "last_run": "error",
+      "consecutive_errors": 9
     },
     {
       "id": "e5777e1d-5002-4c84-8347-beea0750c5af",
       "name": "gaigao-incremental",
-      "schedule": "02:00 Mon-Sat",
-      "model": "default",
-      "enabled": true,
-      "last_status": "error"
+      "schedule": "0 2 * * 1-6",
+      "status": "active",
+      "last_run": "ok",
+      "consecutive_errors": 0
     },
     {
       "id": "7de71854-5213-4767-b801-1306b8cdabf4",
       "name": "gaigao-full",
-      "schedule": "02:00 Sun",
-      "model": "default",
-      "enabled": true,
-      "last_status": "pending"
+      "schedule": "0 2 * * 0",
+      "status": "active",
+      "last_run": "pending",
+      "consecutive_errors": 0
     }
   ],
   "skills": {
@@ -166,14 +166,11 @@
       "coding-agent",
       "feishu-doc",
       "feishu-drive",
-      "feishu-perm",
-      "feishu-wiki",
       "gh-issues",
       "github",
       "healthcheck",
       "imsg",
       "model-usage",
-      "node-connect",
       "openai-image-gen",
       "openai-whisper",
       "openai-whisper-api",
@@ -182,7 +179,6 @@
       "video-frames",
       "weather",
       "agent-cost-monitor",
-      "memory-lancedb-pro-skill",
       "skill-finder-cn",
       "金刚罩",
       "token-ledger"
@@ -193,22 +189,19 @@
       "id": "main",
       "name": "主谋",
       "model": "anthropic/claude-opus-4-6",
-      "tools": "full",
-      "memory_scope": "agent:main (115 entries)"
+      "tools": "full"
     },
     {
       "id": "queen-secretary",
-      "name": "女王小秘（旺财）",
+      "name": "女秘书",
       "model": "anthropic/claude-sonnet-4-6",
-      "tools": "full (deny: runtime, browser, canvas, gateway, nodes, sessions_spawn, sessions_send)",
-      "memory_scope": "agent:queen-secretary (3 entries)"
+      "tools": "feishu"
     },
     {
       "id": "jazmin",
-      "name": "桐仔助手（闵浩杨）",
-      "model": "anthropic/claude-sonnet-4-6",
-      "tools": "full (deny: runtime, browser, canvas, gateway, nodes, sessions_spawn, sessions_send)",
-      "memory_scope": "agent:jazmin (3 entries)"
+      "name": "Jazmin",
+      "model": "anthropic/claude-haiku-4-5",
+      "tools": "messaging"
     }
   ],
   "projects": [
@@ -216,20 +209,40 @@
       "id": "card-sniper",
       "name": "球星卡靶向系统",
       "status": "active",
-      "phase": "Phase 1+2 完成",
-      "notes": "盖高 IP 被封，爬虫暂停；upk token 已更新（98元会员）"
+      "phase": "Phase 1+2 完成，Phase 3 进行中",
+      "path": "~/.openclaw/projects/card-sniper",
+      "highlights": [
+        "eBay Developer Account 审批通过（Production keyset 激活）",
+        "Browse API 验证成功（Rodman PSA 10 返回 3430 条）",
+        "eBay sold listings 网页爬取完成（74人追踪名单）",
+        "盖高全量采集进行中（每天 Cron 自动运行）",
+        "前端移动端适配完成（三页统一响应式布局）",
+        "统一 API server 13+ endpoints，端口 8899"
+      ]
+    },
+    {
+      "id": "dashboard",
+      "name": "My Crib Dashboard",
+      "status": "active",
+      "phase": "自动化运行",
+      "path": "~/.openclaw/projects/dashboard",
+      "highlights": [
+        "GitHub Pages 部署：realhossie.github.io/My-Crib/",
+        "每日凌晨 3 点自动更新"
+      ]
     },
     {
       "id": "morning-report",
       "name": "Morning Post PDF",
-      "status": "degraded",
-      "notes": "持续超时 (8次连续错误)，需要优化"
+      "status": "active",
+      "phase": "自动化运行（有9次连续错误）",
+      "path": "~/.openclaw/projects/morning-report"
     }
   ],
   "system": {
     "disk_total": "228GB",
     "disk_used": "12GB",
-    "disk_avail": "147GB",
+    "disk_avail": "145GB",
     "disk_capacity": "8%"
   }
 }
