@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-24T03:00:00.000000",
+  "generated_at": "2026-03-29T08:55:00.000000",
   "host": {
     "name": "老北京的Mac mini",
     "chip": "Apple M4",
@@ -8,13 +8,13 @@
     "os": "macOS (Darwin 25.3.0 arm64)"
   },
   "openclaw": {
-    "version": "2026.3.13",
+    "version": "2026.3.24",
     "gateway": {
       "status": "online",
-      "pid": 20623,
+      "pid": 5910,
       "port": 18789,
       "bind": "loopback",
-      "memory_mb": 1150
+      "memory_mb": 690
     }
   },
   "models": [
@@ -70,7 +70,7 @@
   "plugins": [
     {
       "id": "memory-lancedb-pro",
-      "version": "1.1.0-beta.8",
+      "version": "1.1.0-beta.10",
       "status": "active",
       "features": [
         "hybrid retrieval",
@@ -109,20 +109,12 @@
   },
   "cron_jobs": [
     {
-      "id": "8aaa964a-506e-437c-a222-63c1a94a78f7",
+      "id": "8ba6461c-a553-4a31-8fd8-8926d7d6e256",
       "name": "daily-token-ledger",
       "schedule": "10 0 * * *",
       "status": "active",
-      "last_run": "ok",
-      "consecutive_errors": 0
-    },
-    {
-      "id": "173a412c-3a93-447f-90b0-b161a2857fb0",
-      "name": "dashboard-update",
-      "schedule": "0 3 * * *",
-      "status": "active",
-      "last_run": "ok",
-      "consecutive_errors": 0
+      "last_run": "error",
+      "consecutive_errors": 1
     },
     {
       "id": "cd2a4df2-f464-4e00-9ae8-4f80d9539862",
@@ -139,22 +131,6 @@
       "status": "active",
       "last_run": "error",
       "consecutive_errors": 9
-    },
-    {
-      "id": "e5777e1d-5002-4c84-8347-beea0750c5af",
-      "name": "gaigao-incremental",
-      "schedule": "0 2 * * 1-6",
-      "status": "active",
-      "last_run": "ok",
-      "consecutive_errors": 0
-    },
-    {
-      "id": "7de71854-5213-4767-b801-1306b8cdabf4",
-      "name": "gaigao-full",
-      "schedule": "0 2 * * 0",
-      "status": "active",
-      "last_run": "pending",
-      "consecutive_errors": 0
     }
   ],
   "skills": {
@@ -166,12 +142,13 @@
       "coding-agent",
       "feishu-doc",
       "feishu-drive",
+      "feishu-perm",
+      "feishu-wiki",
       "gh-issues",
       "github",
       "healthcheck",
       "imsg",
       "model-usage",
-      "openai-image-gen",
       "openai-whisper",
       "openai-whisper-api",
       "skill-creator",
@@ -179,6 +156,7 @@
       "video-frames",
       "weather",
       "agent-cost-monitor",
+      "memory-lancedb-pro",
       "skill-finder-cn",
       "金刚罩",
       "token-ledger"
@@ -215,7 +193,7 @@
         "eBay Developer Account 审批通过（Production keyset 激活）",
         "Browse API 验证成功（Rodman PSA 10 返回 3430 条）",
         "eBay sold listings 网页爬取完成（74人追踪名单）",
-        "盖高全量采集进行中（每天 Cron 自动运行）",
+        "盖高全量采集进行中（2025 条卡片数据，2 个角色完成）",
         "前端移动端适配完成（三页统一响应式布局）",
         "统一 API server 13+ endpoints，端口 8899"
       ]
@@ -234,15 +212,15 @@
     {
       "id": "morning-report",
       "name": "Morning Post PDF",
-      "status": "active",
-      "phase": "自动化运行（有9次连续错误）",
+      "status": "degraded",
+      "phase": "连续 9 次错误，需修复",
       "path": "~/.openclaw/projects/morning-report"
     }
   ],
   "system": {
     "disk_total": "228GB",
     "disk_used": "12GB",
-    "disk_avail": "145GB",
+    "disk_avail": "138GB",
     "disk_capacity": "8%"
   }
 }

@@ -148,5 +148,20 @@
     "date": "2026-03-24",
     "event": "记忆库增至 137 条（main:131 / queen:3 / jazmin:3）",
     "type": "milestone"
+  },
+  {
+    "date": "2026-03-24",
+    "event": "OpenClaw 升级至 v2026.3.24",
+    "type": "milestone"
+  },
+  {
+    "date": "2026-03-29",
+    "event": "Dashboard 自动更新 Cron 重建（每日凌晨 3 点）",
+    "type": "automation"
+  },
+  {
+    "date": "2026-03-29",
+    "event": "盖高采集进度：2025 条卡片数据入库",
+    "type": "project"
   }
 ]
