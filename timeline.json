@@ -163,5 +163,15 @@
     "date": "2026-03-29",
     "event": "盖高采集进度：2025 条卡片数据入库",
     "type": "project"
+  },
+  {
+    "date": "2026-03-29",
+    "event": "Cron announce 推送 workaround：ledger/morning-post 改用 agent 内 message tool 直发",
+    "type": "automation"
+  },
+  {
+    "date": "2026-03-30",
+    "event": "OpenClaw 升级至 v2026.3.28（macOS 25.4.0）",
+    "type": "milestone"
   }
 ]

@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-03-29T08:55:00.000000",
+  "generated_at": "2026-03-30T03:00:00+08:00",
   "host": {
     "name": "老北京的Mac mini",
     "chip": "Apple M4",
     "memory": "16GB Unified",
     "storage": "256GB SSD",
-    "os": "macOS (Darwin 25.3.0 arm64)"
+    "os": "macOS (Darwin 25.4.0 arm64)"
   },
   "openclaw": {
-    "version": "2026.3.24",
+    "version": "2026.3.28",
     "gateway": {
       "status": "online",
-      "pid": 5910,
+      "pid": 6176,
       "port": 18789,
       "bind": "loopback",
-      "memory_mb": 690
+      "memory_mb": 549
     }
   },
   "models": [
@@ -109,15 +109,15 @@
   },
   "cron_jobs": [
     {
-      "id": "8ba6461c-a553-4a31-8fd8-8926d7d6e256",
+      "id": "8ba6461c",
       "name": "daily-token-ledger",
       "schedule": "10 0 * * *",
       "status": "active",
-      "last_run": "error",
-      "consecutive_errors": 1
+      "last_run": "ok",
+      "consecutive_errors": 0
     },
     {
-      "id": "cd2a4df2-f464-4e00-9ae8-4f80d9539862",
+      "id": "cd2a4df2",
       "name": "system-health-patrol",
       "schedule": "0 4 * * *",
       "status": "active",
@@ -125,12 +125,20 @@
       "consecutive_errors": 0
     },
     {
-      "id": "fdc7c37e-0b9f-4be0-878a-ab2582c77b47",
+      "id": "fdc7c37e",
       "name": "morning-post-pdf",
       "schedule": "45 6 * * *",
       "status": "active",
-      "last_run": "error",
-      "consecutive_errors": 9
+      "last_run": "ok",
+      "consecutive_errors": 0
+    },
+    {
+      "id": "ef3b0f22",
+      "name": "dashboard-update",
+      "schedule": "0 3 * * *",
+      "status": "active",
+      "last_run": "running",
+      "consecutive_errors": 0
     }
   ],
   "skills": {
@@ -212,15 +220,15 @@
     {
       "id": "morning-report",
       "name": "Morning Post PDF",
-      "status": "degraded",
-      "phase": "连续 9 次错误，需修复",
+      "status": "active",
+      "phase": "cron 推送 workaround 已修复",
       "path": "~/.openclaw/projects/morning-report"
     }
   ],
   "system": {
     "disk_total": "228GB",
     "disk_used": "12GB",
-    "disk_avail": "138GB",
+    "disk_avail": "145GB",
     "disk_capacity": "8%"
   }
 }
