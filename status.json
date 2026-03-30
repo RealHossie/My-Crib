@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-30T03:00:00+08:00",
+  "generated_at": "2026-03-31T03:00:00+08:00",
   "host": {
     "name": "老北京的Mac mini",
     "chip": "Apple M4",
@@ -14,7 +14,7 @@
       "pid": 6176,
       "port": 18789,
       "bind": "loopback",
-      "memory_mb": 549
+      "memory_mb": 542
     }
   },
   "models": [
@@ -128,9 +128,10 @@
       "id": "fdc7c37e",
       "name": "morning-post-pdf",
       "schedule": "45 6 * * *",
-      "status": "active",
-      "last_run": "ok",
-      "consecutive_errors": 0
+      "status": "degraded",
+      "last_run": "error",
+      "consecutive_errors": 3,
+      "last_error": "Canvas PDF generation failed (page.pdf)"
     },
     {
       "id": "ef3b0f22",
@@ -220,15 +221,17 @@
     {
       "id": "morning-report",
       "name": "Morning Post PDF",
-      "status": "active",
-      "phase": "cron 推送 workaround 已修复",
+      "status": "degraded",
+      "phase": "Canvas PDF 生成连续 3 次失败，需要排查",
       "path": "~/.openclaw/projects/morning-report"
     }
   ],
   "system": {
+    "uptime": "1 day, 3:33",
+    "load_avg": "1.35 1.26 1.16",
     "disk_total": "228GB",
     "disk_used": "12GB",
-    "disk_avail": "145GB",
+    "disk_avail": "144GB",
     "disk_capacity": "8%"
   }
 }

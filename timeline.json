@@ -173,5 +173,10 @@
     "date": "2026-03-30",
     "event": "OpenClaw 升级至 v2026.3.28（macOS 25.4.0）",
     "type": "milestone"
+  },
+  {
+    "date": "2026-03-31",
+    "event": "Morning Post PDF Cron 连续 3 次失败（Canvas page.pdf 崩溃），状态降级为 degraded",
+    "type": "incident"
   }
 ]
