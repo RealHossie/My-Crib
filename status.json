@@ -227,11 +227,42 @@
     }
   ],
   "system": {
-    "uptime": "1 day, 3:33",
-    "load_avg": "1.35 1.26 1.16",
-    "disk_total": "228GB",
-    "disk_used": "12GB",
-    "disk_avail": "144GB",
-    "disk_capacity": "8%"
-  }
+    "openclawVersion": "OpenClaw 2026.4.1 (da64a97)",
+    "gateway": {
+      "status": "running",
+      "state": "active",
+      "pid": 24763,
+      "memoryMB": 504.2,
+      "bindMode": "loopback",
+      "port": 18789,
+      "rpcOk": true,
+      "healthHealthy": true
+    },
+    "disk": {
+      "mount": "/",
+      "totalGiB": 228.3,
+      "usedGiB": 11.7,
+      "availGiB": 138.7,
+      "usagePercent": "8%"
+    },
+    "cron": {
+      "summary": {
+        "total": 23,
+        "ok": 1,
+        "error": 2,
+        "running": 0,
+        "idle": 20,
+        "other": 0
+      },
+      "attention": [
+        null,
+        "2 cron job(s) in error"
+      ]
+    },
+    "memory": {
+      "dailyFiles": 28
+    }
+  },
+  "lastUpdated": "2026-04-03T03:01:43.214661+08:00",
+  "generatedAt": "2026-04-03 03:01:43 "
 }

@@ -178,5 +178,23 @@
     "date": "2026-03-31",
     "event": "Morning Post PDF Cron 连续 3 次失败（Canvas page.pdf 崩溃），状态降级为 degraded",
     "type": "incident"
+  },
+  {
+    "date": "2026-04-03",
+    "title": "Cron jobs need attention",
+    "summary": "2 scheduled job(s) are currently in error state.",
+    "tags": [
+      "ops",
+      "cron"
+    ]
+  },
+  {
+    "date": "2026-04-03",
+    "title": "Gateway audit flags remain",
+    "summary": "Gateway is healthy, but runtime/path audit still reports recommended cleanup items.",
+    "tags": [
+      "ops",
+      "gateway"
+    ]
   }
 ]
