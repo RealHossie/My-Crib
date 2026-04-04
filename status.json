@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-31T03:00:00+08:00",
+  "generated_at": "2026-04-05T03:00:00+08:00",
   "host": {
     "name": "老北京的Mac mini",
     "chip": "Apple M4",
@@ -8,13 +8,13 @@
     "os": "macOS (Darwin 25.4.0 arm64)"
   },
   "openclaw": {
-    "version": "2026.3.28",
+    "version": "2026.4.2",
     "gateway": {
       "status": "online",
-      "pid": 6176,
+      "pid": 50826,
       "port": 18789,
       "bind": "loopback",
-      "memory_mb": 542
+      "memory_mb": 676.4
     }
   },
   "models": [
@@ -128,18 +128,18 @@
       "id": "fdc7c37e",
       "name": "morning-post-pdf",
       "schedule": "45 6 * * *",
-      "status": "degraded",
-      "last_run": "error",
-      "consecutive_errors": 3,
-      "last_error": "Canvas PDF generation failed (page.pdf)"
+      "status": "active",
+      "last_run": "ok",
+      "consecutive_errors": 0
     },
     {
       "id": "ef3b0f22",
       "name": "dashboard-update",
       "schedule": "0 3 * * *",
-      "status": "active",
+      "status": "running",
       "last_run": "running",
-      "consecutive_errors": 0
+      "consecutive_errors": 1,
+      "last_error": "timeout"
     }
   ],
   "skills": {
@@ -227,12 +227,12 @@
     }
   ],
   "system": {
-    "openclawVersion": "OpenClaw 2026.4.1 (da64a97)",
+    "openclawVersion": "OpenClaw 2026.4.2 (d74a122)",
     "gateway": {
       "status": "running",
       "state": "active",
-      "pid": 24763,
-      "memoryMB": 504.2,
+      "pid": 50826,
+      "memoryMB": 676.4,
       "bindMode": "loopback",
       "port": 18789,
       "rpcOk": true,
@@ -240,29 +240,29 @@
     },
     "disk": {
       "mount": "/",
-      "totalGiB": 228.3,
-      "usedGiB": 11.7,
-      "availGiB": 138.7,
-      "usagePercent": "8%"
+      "totalGiB": 228.0,
+      "usedGiB": 69.0,
+      "availGiB": 136.0,
+      "usagePercent": "34%"
     },
     "cron": {
       "summary": {
-        "total": 23,
-        "ok": 1,
+        "total": 27,
+        "ok": 3,
         "error": 2,
-        "running": 0,
-        "idle": 20,
+        "running": 1,
+        "idle": 21,
         "other": 0
       },
       "attention": [
-        null,
-        "2 cron job(s) in error"
+        "2 cron job(s) in error",
+        "dashboard-update previous run timed out; current run active"
       ]
     },
     "memory": {
-      "dailyFiles": 28
+      "dailyFiles": 31
     }
   },
-  "lastUpdated": "2026-04-03T03:01:43.214661+08:00",
-  "generatedAt": "2026-04-03 03:01:43 "
+  "lastUpdated": "2026-04-05T03:01:41.131322+08:00",
+  "generatedAt": "2026-04-05T03:01:41.131322+08:00"
 }

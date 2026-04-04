@@ -196,5 +196,20 @@
       "ops",
       "gateway"
     ]
+  },
+  {
+    "date": "2026-04-05",
+    "event": "OpenClaw 升级至 v2026.4.2",
+    "type": "milestone"
+  },
+  {
+    "date": "2026-04-05",
+    "title": "Dashboard updater recovered and running",
+    "summary": "Dashboard daily update job is active again after the previous run timed out.",
+    "tags": [
+      "ops",
+      "dashboard",
+      "cron"
+    ]
   }
 ]
