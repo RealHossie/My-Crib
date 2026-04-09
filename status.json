@@ -231,8 +231,8 @@
     "gateway": {
       "status": "running",
       "state": "active",
-      "pid": 50826,
-      "memoryMB": 676.4,
+      "pid": 11304,
+      "memoryMB": 1217.1,
       "bindMode": "loopback",
       "port": 18789,
       "rpcOk": true,
@@ -240,29 +240,29 @@
     },
     "disk": {
       "mount": "/",
-      "totalGiB": 228.0,
-      "usedGiB": 69.0,
-      "availGiB": 136.0,
-      "usagePercent": "34%"
+      "totalGiB": "228Gi",
+      "usedGiB": "12Gi",
+      "availGiB": "138Gi",
+      "usagePercent": "8%"
     },
     "cron": {
       "summary": {
-        "total": 27,
-        "ok": 3,
-        "error": 2,
+        "total": 24,
+        "ok": 2,
+        "error": 1,
         "running": 1,
-        "idle": 21,
+        "idle": 20,
         "other": 0
       },
       "attention": [
-        "2 cron job(s) in error",
-        "dashboard-update previous run timed out; current run active"
+        "1 cron job(s) in error",
+        "1 cron job(s) currently running"
       ]
     },
     "memory": {
-      "dailyFiles": 31
+      "dailyFiles": 34
     }
   },
-  "lastUpdated": "2026-04-05T03:01:41.131322+08:00",
-  "generatedAt": "2026-04-05T03:01:41.131322+08:00"
+  "lastUpdated": "2026-04-10T03:00:39.194498+08:00",
+  "generatedAt": "2026-04-10T03:00:39.194498+08:00"
 }
