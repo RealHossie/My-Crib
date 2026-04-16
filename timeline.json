@@ -229,5 +229,19 @@
       "ops",
       "cron"
     ]
+  },
+  {
+    "date": "2026-04-17",
+    "event": "OpenClaw 升级至 v2026.4.14",
+    "type": "milestone"
+  },
+  {
+    "date": "2026-04-17",
+    "title": "Cron jobs need attention",
+    "summary": "2 scheduled job(s) in error state: system-health-patrol, morning-post-pdf.",
+    "tags": [
+      "ops",
+      "cron"
+    ]
   }
 ]
