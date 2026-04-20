@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T03:00:00+08:00",
+  "generated_at": "2026-04-21T03:00:00+08:00",
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -8,13 +8,13 @@
     "os": "macOS (Darwin 25.4.0 arm64)"
   },
   "openclaw": {
-    "version": "2026.4.14",
+    "version": "2026.4.15",
     "gateway": {
       "status": "online",
-      "pid": 68759,
+      "pid": 64623,
       "port": 18789,
       "bind": "loopback",
-      "memory_mb": 1147.2
+      "memory_mb": 937.6
     }
   },
   "models": [
@@ -101,6 +101,7 @@
     "total_entries": 137,
     "retrieval_mode": "hybrid",
     "db_path": "~/.openclaw/memory/lancedb-pro",
+    "db_size_mb": 36,
     "scopes": {
       "agent:main": 131,
       "agent:queen-secretary": 3,
@@ -226,12 +227,12 @@
     }
   ],
   "system": {
-    "openclawVersion": "OpenClaw 2026.4.14 (323493f)",
+    "openclawVersion": "OpenClaw 2026.4.15 (041266a)",
     "gateway": {
       "status": "running",
       "state": "active",
-      "pid": 68759,
-      "memoryMB": 1147.2,
+      "pid": 64623,
+      "memoryMB": 937.6,
       "bindMode": "loopback",
       "port": 18789,
       "rpcOk": true,
@@ -241,27 +242,26 @@
       "mount": "/",
       "totalGiB": "228Gi",
       "usedGiB": "12Gi",
-      "availGiB": "140Gi",
+      "availGiB": "138Gi",
       "usagePercent": "8%"
     },
     "cron": {
       "summary": {
         "total": 24,
-        "ok": 1,
+        "ok": 2,
         "error": 2,
+        "idle": 21,
         "running": 1,
-        "idle": 20,
         "other": 0
       },
       "attention": [
-        "2 cron job(s) in error state (system-health-patrol, morning-post-pdf)",
-        "1 cron job(s) currently running (dashboard-update)"
+        "2 cron job(s) in error state (system-health-patrol, morning-post-pdf)"
       ]
     },
     "memory": {
-      "dailyFiles": 34
+      "dailyFiles": 35
     }
   },
-  "lastUpdated": "2026-04-19T03:00:00+08:00",
-  "generatedAt": "2026-04-19T03:00:00+08:00"
+  "lastUpdated": "2026-04-21T03:00:00+08:00",
+  "generatedAt": "2026-04-21T03:00:00+08:00"
 }

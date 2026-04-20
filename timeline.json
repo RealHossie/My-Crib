@@ -243,5 +243,15 @@
       "ops",
       "cron"
     ]
+  },
+  {
+    "date": "2026-04-21",
+    "event": "OpenClaw 升级至 v2026.4.15（041266a）",
+    "type": "milestone"
+  },
+  {
+    "date": "2026-04-21",
+    "event": "Dashboard 更新脚本优化：增加磁盘/内存实时采集、Timeline 自动追加里程碑",
+    "type": "automation"
   }
 ]
