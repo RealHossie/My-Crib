@@ -253,5 +253,10 @@
     "date": "2026-04-21",
     "event": "Dashboard 更新脚本优化：增加磁盘/内存实时采集、Timeline 自动追加里程碑",
     "type": "automation"
+  },
+  {
+    "date": "2026-04-22",
+    "event": "记忆库保持 137 条（main:131 / queen:3 / jazmin:3）；Cron 2/24 报错（system-health-patrol, morning-post status=ok）",
+    "type": "status"
   }
 ]
