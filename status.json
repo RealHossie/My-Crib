@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-23T03:00:00+08:00",
-  "updated_at": "2026-04-22T19:00:32Z",
+  "generated_at": "2026-04-24T03:00:00+08:00",
+  "updated_at": "2026-04-23T19:00:59Z",
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -15,9 +15,9 @@
       "pid": 64623,
       "port": 18789,
       "bind": "loopback",
-      "memory_mb": 1285.5,
-      "uptime_seconds": 102600,
-      "cpu_percent": 14.2
+      "memory_mb": 1297.7,
+      "uptime": "9d 2h 33m",
+      "cpu_percent": "nominal"
     }
   },
   "disk": {
@@ -34,15 +34,14 @@
       "error": 1,
       "idle": 0
     },
-    "last_check": "2026-04-23T03:00:00Z",
+    "last_check": "2026-04-24T03:00:00Z",
     "recent_errors": [
       {
         "id": "cd2a4df2",
         "name": "system-health-patrol",
         "schedule": "0 4 * * *",
-        "last_error": "timeout",
-        "consecutive_errors": 1,
-        "next_run": "+1h"
+        "status": "error",
+        "next_run": "2026-04-24T04:00:00+08:00"
       }
     ]
   },
@@ -54,7 +53,7 @@
       "agent:jazmin": 3
     },
     "retrieval_mode": "hybrid",
-    "last_updated": "2026-03-24T00:00:00Z"
+    "last_updated": "2026-04-24T03:00:00Z"
   },
   "agents": [
     {
@@ -85,7 +84,7 @@
       "id": "morning-report",
       "name": "Morning Post PDF",
       "status": "degraded",
-      "note": "Canvas PDF 生成问题（04-03 起）"
+      "note": "Canvas PDF 生成问题"
     }
   ],
   "health": {
