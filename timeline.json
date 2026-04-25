@@ -297,11 +297,21 @@
   {
     "date": "2026-04-25",
     "title": "Daily dashboard refresh completed",
-    "summary": "Gateway stable (pid 47069, 880MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (0 errors). Uptime: 10d 2h 32m.",
+    "summary": "Gateway stable (pid 84271, 743MB memory), disk 8% (12/228GB), 137 memory entries, 24 cron jobs (0 errors). Uptime: 10h 0m.",
     "tags": [
       "ops",
       "dashboard",
       "monitoring"
+    ]
+  },
+  {
+    "date": "2026-04-25",
+    "title": "Gateway process restart detected",
+    "summary": "New PID 84271 (previously 47069). Gateway restarted at ~17:00 UTC+8. Memory footprint reset to 743MB. All services stable.",
+    "tags": [
+      "ops",
+      "gateway",
+      "note"
     ]
   }
 ]

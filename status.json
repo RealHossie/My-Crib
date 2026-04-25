@@ -12,19 +12,19 @@
     "version": "2026.4.22 (00bd2cf)",
     "gateway": {
       "status": "running",
-      "pid": 47069,
+      "pid": 84271,
       "port": 18789,
       "bind": "loopback",
-      "memory_mb": 879.6,
-      "uptime": "10d 2h 32m",
+      "memory_mb": 742.9,
+      "uptime": "10h 0m 57s",
       "cpu_percent": "nominal"
     }
   },
   "disk": {
     "total_gb": 228,
     "used_gb": 12,
-    "available_gb": 134,
-    "usage_percent": 9
+    "available_gb": 135,
+    "usage_percent": 8
   },
   "cron": {
     "total_jobs": 24,
