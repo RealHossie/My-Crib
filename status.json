@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-25T03:00:00+08:00",
-  "updated_at": "2026-04-25T19:00:00Z",
+  "generated_at": "2026-04-27T03:00:00+08:00",
+  "updated_at": "2026-04-26T19:00:00Z",
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -15,8 +15,8 @@
       "pid": 84271,
       "port": 18789,
       "bind": "loopback",
-      "memory_mb": 742.9,
-      "uptime": "10h 0m 57s",
+      "memory_mb": 711.0,
+      "uptime": "1d 10h 0m",
       "cpu_percent": "nominal"
     }
   },
@@ -32,9 +32,9 @@
       "active": 1,
       "ok": 3,
       "error": 0,
-      "idle": 19
+      "idle": 20
     },
-    "last_check": "2026-04-25T03:00:00Z",
+    "last_check": "2026-04-27T03:00:00+08:00",
     "recent_errors": []
   },
   "memory": {
@@ -45,7 +45,7 @@
       "agent:jazmin": 3
     },
     "retrieval_mode": "hybrid",
-    "last_updated": "2026-04-25T03:00:00Z"
+    "last_updated": "2026-04-27T03:00:00+08:00"
   },
   "agents": [
     {
