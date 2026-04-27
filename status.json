@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-27T03:00:00+08:00",
-  "updated_at": "2026-04-26T19:00:00Z",
+  "generated_at": "2026-04-28T03:00:00+08:00",
+  "timestamp": 1746806400,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -12,19 +12,29 @@
     "version": "2026.4.22 (00bd2cf)",
     "gateway": {
       "status": "running",
-      "pid": 84271,
+      "pid": 32940,
       "port": 18789,
       "bind": "loopback",
-      "memory_mb": 711.0,
-      "uptime": "1d 10h 0m",
-      "cpu_percent": "nominal"
+      "memory_mb": 814,
+      "uptime_hours": 34,
+      "started_at": "2026-04-27T21:17:23+08:00"
     }
   },
-  "disk": {
-    "total_gb": 228,
-    "used_gb": 12,
-    "available_gb": 135,
-    "usage_percent": 8
+  "system": {
+    "uptime_days": 13,
+    "uptime_hours": 2,
+    "uptime_minutes": 32,
+    "disk": {
+      "total_gb": 228,
+      "used_gb": 12,
+      "available_gb": 131,
+      "usage_percent": 9
+    },
+    "load_average": {
+      "1m": 1.07,
+      "5m": 1.11,
+      "15m": 1.10
+    }
   },
   "cron": {
     "total_jobs": 24,
@@ -34,7 +44,13 @@
       "error": 0,
       "idle": 20
     },
-    "last_check": "2026-04-27T03:00:00+08:00",
+    "dashboard_update_job": {
+      "id": "ef3b0f22-947c-40db-abaa-5c6bfad3db5c",
+      "name": "dashboard-update",
+      "schedule": "cron 0 3 * * * @ Asia/Shanghai",
+      "last_run": "2026-04-27T19:00:00Z",
+      "status": "running"
+    },
     "recent_errors": []
   },
   "memory": {
@@ -45,12 +61,13 @@
       "agent:jazmin": 3
     },
     "retrieval_mode": "hybrid",
-    "last_updated": "2026-04-27T03:00:00+08:00"
+    "lancedb_pro": true
   },
   "agents": [
     {
       "id": "main",
       "name": "主谋",
+      "role": "Team Leader",
       "status": "active",
       "sessions_active": 1
     },
@@ -70,19 +87,26 @@
       "id": "card-sniper",
       "name": "球星卡靶向系统",
       "status": "active",
-      "phase": "Phase 3 数据采集中"
+      "phase": "Phase 3 数据采集中",
+      "progress": "2025+ cards indexed"
     },
     {
       "id": "morning-report",
       "name": "Morning Post PDF",
       "status": "degraded",
-      "note": "Canvas PDF 生成问题"
+      "note": "Canvas PDF 生成问题（已知）"
     }
   ],
   "health": {
     "gateway": "healthy",
     "cron": "healthy",
     "memory": "optimal",
-    "disk": "excellent"
+    "disk": "excellent",
+    "overall": "nominal"
+  },
+  "last_update": {
+    "timestamp": "2026-04-28T03:00:00+08:00",
+    "source": "cron: dashboard-update",
+    "sanitized": true
   }
 }

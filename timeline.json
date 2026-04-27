@@ -323,5 +323,25 @@
       "dashboard",
       "monitoring"
     ]
+  },
+  {
+    "date": "2026-04-28",
+    "title": "Gateway process restart detected",
+    "summary": "New PID 32940 (previously 84271). Memory footprint 814MB. System uptime 13d 2h. All services stable.",
+    "tags": [
+      "ops",
+      "gateway",
+      "note"
+    ]
+  },
+  {
+    "date": "2026-04-28",
+    "title": "Daily dashboard refresh completed",
+    "summary": "Gateway stable (pid 32940, 814MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (0 errors). System uptime: 13d 2h. All nominal.",
+    "tags": [
+      "ops",
+      "dashboard",
+      "monitoring"
+    ]
   }
 ]
