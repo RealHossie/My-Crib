@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-08T03:00:00+08:00",
-  "timestamp": 1746581400,
+  "generated_at": "2026-05-09T03:00:00+08:00",
+  "timestamp": 1746727200,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -9,71 +9,54 @@
     "os": "macOS (Darwin 25.4.0 arm64)"
   },
   "openclaw": {
-    "version": "2026.5.3-1 (2eae30e)",
+    "version": "2026.5.7 (eeef486)",
     "gateway": {
       "status": "running",
-      "pid": 98343,
+      "pid": 22341,
       "port": 18789,
       "bind": "loopback",
-      "memory_mb": 751,
-      "uptime_hours": 506,
+      "memory_mb": 774,
+      "uptime_hours": 282,
       "started_at": "2026-04-27T21:17:23+08:00"
     }
   },
   "system": {
-    "uptime_days": 21,
+    "uptime_days": 24,
     "uptime_hours": 2,
     "uptime_minutes": 32,
     "disk": {
       "total_gb": 228,
       "used_gb": 12,
-      "available_gb": 134,
-      "usage_percent": 9
+      "available_gb": 135,
+      "usage_percent": 8
     },
     "load_average": {
-      "1m": 1.51,
-      "5m": 1.13,
-      "15m": 1.06
+      "1m": 1.06,
+      "5m": 1.14,
+      "15m": 1.21
     }
   },
   "cron": {
-    "total_jobs": 24,
+    "total_jobs": 22,
     "status_summary": {
-      "active": 1,
-      "ok": 20,
-      "error": 3,
-      "idle": 0
+      "running": 1,
+      "ok": 3,
+      "error": 0,
+      "idle": 18
     },
     "dashboard_update_job": {
       "id": "55b45a02-9568-4e70-8727-8834387b650f",
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
-      "last_run": "2026-05-08T03:00:00+08:00",
+      "last_run": "2026-05-09T03:00:00+08:00",
       "status": "running"
     },
-    "recent_errors": [
-      {
-        "job_id": "d9dc5db4-215d-47db-8056-7fd242e5dde6",
-        "name": "system-health-patrol",
-        "status": "error",
-        "last_run": "23h ago"
-      },
-      {
-        "job_id": "fdc7c37e-0b9f-4be0-878a-ab2582c77b47",
-        "name": "morning-post",
-        "status": "error",
-        "last_run": "20h ago"
-      },
-      {
-        "job_id": "acf7e784-3206-4e84-8aa2-8cfb67444a6c",
-        "name": "daily-token-ledger",
-        "status": "error",
-        "last_run": "3h ago"
-      }
-    ]
+    "recent_errors": []
   },
   "memory": {
     "total_entries": 137,
+    "daily_files": 42,
+    "memory_md_lines": 113,
     "by_scope": {
       "agent:main": 131,
       "agent:queen-secretary": 3,
@@ -87,8 +70,7 @@
       "id": "main",
       "name": "主谋",
       "role": "Team Leader",
-      "status": "active",
-      "sessions_active": 1
+      "status": "active"
     },
     {
       "id": "queen-secretary",
@@ -118,13 +100,13 @@
   ],
   "health": {
     "gateway": "healthy",
-    "cron": "degraded",
+    "cron": "healthy",
     "memory": "optimal",
     "disk": "excellent",
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-05-08T03:00:00+08:00",
+    "timestamp": "2026-05-09T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
