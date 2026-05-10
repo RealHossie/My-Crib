@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-10T03:00:00+08:00",
-  "timestamp": 1746813600,
+  "generated_at": "2026-05-11T03:00:00+08:00",
+  "timestamp": 1746900000,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -15,25 +15,25 @@
       "pid": 22341,
       "port": 18789,
       "bind": "loopback",
-      "memory_mb": 785,
-      "uptime_hours": 283,
+      "memory_mb": 783,
+      "uptime_hours": 307,
       "started_at": "2026-04-27T21:17:23+08:00"
     }
   },
   "system": {
-    "uptime_days": 25,
+    "uptime_days": 26,
     "uptime_hours": 2,
     "uptime_minutes": 32,
     "disk": {
       "total_gb": 228,
-      "used_gb": 12,
+      "used_gb": 11,
       "available_gb": 134,
       "usage_percent": 9
     },
     "load_average": {
-      "1m": 1.31,
-      "5m": 1.21,
-      "15m": 1.17
+      "1m": 1.32,
+      "5m": 1.27,
+      "15m": 1.25
     }
   },
   "cron": {
@@ -48,14 +48,14 @@
       "id": "55b45a02-9568-4e70-8727-8834387b650f",
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
-      "last_run": "2026-05-10T03:00:00+08:00",
+      "last_run": "2026-05-11T03:00:00+08:00",
       "status": "running"
     },
     "recent_errors": []
   },
   "memory": {
     "total_entries": 137,
-    "daily_files": 43,
+    "daily_files": 44,
     "memory_md_lines": 113,
     "by_scope": {
       "agent:main": 131,
@@ -106,7 +106,7 @@
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-05-10T03:00:00+08:00",
+    "timestamp": "2026-05-11T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
