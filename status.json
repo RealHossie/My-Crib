@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-15T03:00:00+08:00",
-  "timestamp": 1747245600,
+  "generated_at": "2026-05-16T03:00:00+08:00",
+  "timestamp": 1747331400,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -48,13 +48,13 @@
       "id": "55b45a02-9568-4e70-8727-8834387b650f",
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
-      "last_run": "2026-05-15T03:00:00+08:00",
+      "last_run": "2026-05-16T03:00:00+08:00",
       "status": "running"
     },
     "recent_errors": [
       {
         "job": "daily-token-ledger",
-        "last_error": "2026-05-13T00:10:00+08:00",
+        "last_error": "2026-05-15T00:10:00+08:00",
         "status": "error"
       }
     ]
@@ -112,7 +112,7 @@
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-05-15T03:00:00+08:00",
+    "timestamp": "2026-05-16T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
