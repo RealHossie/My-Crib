@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-16T03:00:15+08:00",
-  "timestamp": 1747331415,
+  "generated_at": "2026-05-18T03:00:42+08:00",
+  "timestamp": 1747417242,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -16,14 +16,14 @@
       "port": 18789,
       "bind": "loopback",
       "memory_mb": 691,
-      "uptime_hours": 30,
-      "started_at": "2026-05-12T21:00:00+08:00"
+      "uptime_hours": 54,
+      "started_at": "2026-05-16T03:00:00+08:00"
     }
   },
   "system": {
     "uptime_days": 32,
-    "uptime_hours": 2,
-    "uptime_minutes": 32,
+    "uptime_hours": 3,
+    "uptime_minutes": 0,
     "disk": {
       "total_gb": 228,
       "used_gb": 12,
@@ -31,9 +31,9 @@
       "usage_percent": 9
     },
     "load_average": {
-      "1m": 1.49,
-      "5m": 1.25,
-      "15m": 1.18
+      "1m": 1.52,
+      "5m": 1.28,
+      "15m": 1.20
     }
   },
   "cron": {
@@ -48,20 +48,20 @@
       "id": "55b45a02-9568-4e70-8727-8834387b650f",
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
-      "last_run": "2026-05-16T03:00:15+08:00",
+      "last_run": "2026-05-18T03:00:42+08:00",
       "status": "running"
     },
     "recent_errors": [
       {
         "job": "daily-token-ledger",
-        "last_error": "2026-05-15T00:10:00+08:00",
+        "last_error": "2026-05-18T00:10:00+08:00",
         "status": "error"
       }
     ]
   },
   "memory": {
     "total_entries": 137,
-    "daily_files": 44,
+    "daily_files": 45,
     "memory_md_lines": 148,
     "by_scope": {
       "agent:main": 131,
@@ -106,13 +106,13 @@
   ],
   "health": {
     "gateway": "healthy",
-    "cron": "healthy",
+    "cron": "degraded",
     "memory": "optimal",
     "disk": "excellent",
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-05-16T03:00:15+08:00",
+    "timestamp": "2026-05-18T03:00:42+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
