@@ -479,5 +479,30 @@
       "dashboard",
       "monitoring"
     ]
+  },
+  {
+    "date": "2026-05-20",
+    "event": "OpenClaw 升级至 v2026.5.18 (50a2481)",
+    "type": "milestone"
+  },
+  {
+    "date": "2026-05-20",
+    "title": "Gateway process restart detected",
+    "summary": "New PID 14560 (previously 39710). Memory footprint 649MB. All services stable.",
+    "tags": [
+      "ops",
+      "gateway",
+      "note"
+    ]
+  },
+  {
+    "date": "2026-05-20",
+    "title": "Daily dashboard refresh completed",
+    "summary": "OpenClaw v2026.5.18 stable. Gateway running (pid 14560, 649MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (1 error: daily-token-ledger). All core systems nominal.",
+    "tags": [
+      "ops",
+      "dashboard",
+      "monitoring"
+    ]
   }
 ]
