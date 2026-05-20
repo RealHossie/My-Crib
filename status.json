@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-20T03:00:00+08:00",
-  "timestamp": 1747503600,
+  "generated_at": "2026-05-21T03:00:00+08:00",
+  "timestamp": 1747590000,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -15,49 +15,43 @@
       "pid": 14560,
       "port": 18789,
       "bind": "loopback",
-      "memory_mb": 649,
+      "memory_mb": 572,
       "uptime_hours": 8.35,
       "started_at": "2026-05-19T19:00:00+08:00"
     }
   },
   "system": {
-    "uptime_days": 32,
-    "uptime_hours": 3,
-    "uptime_minutes": 0,
+    "uptime_days": 36,
+    "uptime_hours": 2,
+    "uptime_minutes": 32,
     "disk": {
       "total_gb": 228,
-      "used_gb": 12,
-      "available_gb": 131,
-      "usage_percent": 9
+      "used_gb": 16,
+      "available_gb": 114,
+      "usage_percent": 13
     },
     "load_average": {
-      "1m": 1.52,
-      "5m": 1.28,
-      "15m": 1.20
+      "1m": 1.36,
+      "5m": 1.18,
+      "15m": 1.11
     }
   },
   "cron": {
-    "total_jobs": 24,
+    "total_jobs": 21,
     "status_summary": {
       "running": 1,
-      "ok": 22,
-      "error": 1,
-      "idle": 20
+      "ok": 2,
+      "error": 0,
+      "idle": 17
     },
     "dashboard_update_job": {
       "id": "55b45a02-9568-4e70-8727-8834387b650f",
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
-      "last_run": "2026-05-20T03:00:00+08:00",
+      "last_run": "2026-05-21T03:00:00+08:00",
       "status": "running"
     },
-    "recent_errors": [
-      {
-        "job": "daily-token-ledger",
-        "last_error": "2026-05-18T00:10:00+08:00",
-        "status": "error"
-      }
-    ]
+    "recent_errors": []
   },
   "memory": {
     "total_entries": 137,
@@ -106,13 +100,13 @@
   ],
   "health": {
     "gateway": "healthy",
-    "cron": "degraded",
+    "cron": "healthy",
     "memory": "optimal",
     "disk": "excellent",
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-05-20T03:00:00+08:00",
+    "timestamp": "2026-05-21T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
