@@ -1348,18 +1348,25 @@ function renderTimeline(items) {
   const typeColors = {
     milestone: 'milestone', plugin: 'plugin', model: 'model',
     automation: 'automation', channel: 'channel',
-    integration: 'integration', project: 'project'
+    integration: 'integration', project: 'project',
+    ops: 'automation', security: 'milestone', agent: 'integration',
+    status: 'automation'
   };
-  el.innerHTML = items.map((item, i) => `
+  el.innerHTML = items.map((item, i) => {
+    // Support both old format (event/type) and new format (title/summary/tags)
+    const evt = item.event || item.title || 'Unknown event';
+    const typ = item.type || (item.tags && item.tags[0]) || 'ops';
+    return `
     <div class="tl-item" style="animation-delay:${i * 0.12}s">
-      <div class="tl-dot ${typeColors[item.type] || 'automation'}"></div>
+      <div class="tl-dot ${typeColors[typ] || 'automation'}"></div>
       <div class="tl-date">${item.date}</div>
       <div class="tl-event">
-        ${item.event}
-        <span class="tl-badge ${typeColors[item.type] || 'automation'}">${item.type}</span>
+        ${evt}
+        <span class="tl-badge ${typeColors[typ] || 'automation'}">${typ.toUpperCase()}</span>
       </div>
     </div>
-  `).join('');
+  `;
+  }).join('');
 }
 
 /* ═══════════════════════════════════════════════

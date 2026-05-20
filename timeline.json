@@ -181,21 +181,13 @@
   },
   {
     "date": "2026-04-03",
-    "title": "Cron jobs need attention",
-    "summary": "2 scheduled job(s) are currently in error state.",
-    "tags": [
-      "ops",
-      "cron"
-    ]
+    "event": "Cron jobs need attention — 2 scheduled job(s) are currently in error state.",
+    "type": "ops"
   },
   {
     "date": "2026-04-03",
-    "title": "Gateway audit flags remain",
-    "summary": "Gateway is healthy, but runtime/path audit still reports recommended cleanup items.",
-    "tags": [
-      "ops",
-      "gateway"
-    ]
+    "event": "Gateway audit flags remain — Gateway is healthy, but runtime/path audit still reports recommended cleanup items.",
+    "type": "ops"
   },
   {
     "date": "2026-04-05",
@@ -204,31 +196,18 @@
   },
   {
     "date": "2026-04-05",
-    "title": "Dashboard updater recovered and running",
-    "summary": "Dashboard daily update job is active again after the previous run timed out.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "cron"
-    ]
+    "event": "Dashboard updater recovered and running — Dashboard daily update job is active again after the previous run timed out.",
+    "type": "ops"
   },
   {
     "date": "2026-04-06",
-    "title": "Dashboard daily snapshot refreshed",
-    "summary": "Dashboard status data refreshed successfully with sanitized gateway, disk, cron, and memory metrics.",
-    "tags": [
-      "ops",
-      "dashboard"
-    ]
+    "event": "Dashboard daily snapshot refreshed — Dashboard status data refreshed successfully with sanitized gateway, disk, cron, and memory metrics.",
+    "type": "ops"
   },
   {
     "date": "2026-04-10",
-    "title": "Cron jobs need attention",
-    "summary": "1 scheduled job(s) currently in error state during dashboard refresh.",
-    "tags": [
-      "ops",
-      "cron"
-    ]
+    "event": "Cron jobs need attention — 1 scheduled job(s) currently in error state during dashboard refresh.",
+    "type": "ops"
   },
   {
     "date": "2026-04-17",
@@ -237,12 +216,8 @@
   },
   {
     "date": "2026-04-17",
-    "title": "Cron jobs need attention",
-    "summary": "2 scheduled job(s) in error state: system-health-patrol, morning-post-pdf.",
-    "tags": [
-      "ops",
-      "cron"
-    ]
+    "event": "Cron jobs need attention — 2 scheduled job(s) in error state: system-health-patrol, morning-post-pdf.",
+    "type": "ops"
   },
   {
     "date": "2026-04-21",
@@ -261,23 +236,13 @@
   },
   {
     "date": "2026-04-23",
-    "title": "Daily dashboard refresh completed",
-    "summary": "Gateway running stable (pid 64623, 1.3GB memory), disk usage 8%, 137 memory entries, 24 cron jobs (1 error: system-health-patrol).",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring"
-    ]
+    "event": "Daily dashboard refresh completed — Gateway running stable (pid 64623, 1.3GB memory), disk usage 8%, 137 memory entries, 24 cron jobs (1 error: system-health-patrol).",
+    "type": "ops"
   },
   {
     "date": "2026-04-24",
-    "title": "Daily dashboard refresh completed",
-    "summary": "Gateway stable (pid 64623, 1.3GB memory), disk 8% (12/228GB), 137 memory entries, 24 cron jobs. System uptime: 9d 2h 33m.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring"
-    ]
+    "event": "Daily dashboard refresh completed — Gateway stable (pid 64623, 1.3GB memory), disk 8% (12/228GB), 137 memory entries, 24 cron jobs. System uptime: 9d 2h 33m.",
+    "type": "ops"
   },
   {
     "date": "2026-04-25",
@@ -286,95 +251,48 @@
   },
   {
     "date": "2026-04-25",
-    "title": "Cron errors cleared — all jobs healthy",
-    "summary": "All 24 cron jobs healthy (0 errors, down from 1). system-health-patrol recovered. Gateway uptime 10d+, memory 880MB.",
-    "tags": [
-      "ops",
-      "cron",
-      "recovery"
-    ]
+    "event": "Cron errors cleared — all jobs healthy — All 24 cron jobs healthy (0 errors, down from 1). system-health-patrol recovered. Gateway uptime 10d+, memory 880MB.",
+    "type": "ops"
   },
   {
     "date": "2026-04-25",
-    "title": "Daily dashboard refresh completed",
-    "summary": "Gateway stable (pid 84271, 743MB memory), disk 8% (12/228GB), 137 memory entries, 24 cron jobs (0 errors). Uptime: 10h 0m.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring"
-    ]
+    "event": "Daily dashboard refresh completed — Gateway stable (pid 84271, 743MB memory), disk 8% (12/228GB), 137 memory entries, 24 cron jobs (0 errors). Uptime: 10h 0m.",
+    "type": "ops"
   },
   {
     "date": "2026-04-25",
-    "title": "Gateway process restart detected",
-    "summary": "New PID 84271 (previously 47069). Gateway restarted at ~17:00 UTC+8. Memory footprint reset to 743MB. All services stable.",
-    "tags": [
-      "ops",
-      "gateway",
-      "note"
-    ]
+    "event": "Gateway process restart detected — New PID 84271 (previously 47069). Gateway restarted at ~17:00 UTC+8. Memory footprint reset to 743MB. All services stable.",
+    "type": "ops"
   },
   {
     "date": "2026-04-27",
-    "title": "Daily dashboard refresh completed",
-    "summary": "Gateway stable (pid 84271, 711MB memory), disk 8% (12/228GB), 137 memory entries, 24 cron jobs (0 errors). Uptime: 34h+. All systems nominal.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring"
-    ]
+    "event": "Daily dashboard refresh completed — Gateway stable (pid 84271, 711MB memory), disk 8% (12/228GB), 137 memory entries, 24 cron jobs (0 errors). Uptime: 34h+. All systems nominal.",
+    "type": "ops"
   },
   {
     "date": "2026-04-28",
-    "title": "Gateway process restart detected",
-    "summary": "New PID 32940 (previously 84271). Memory footprint 814MB. System uptime 13d 2h. All services stable.",
-    "tags": [
-      "ops",
-      "gateway",
-      "note"
-    ]
+    "event": "Gateway process restart detected — New PID 32940 (previously 84271). Memory footprint 814MB. System uptime 13d 2h. All services stable.",
+    "type": "ops"
   },
   {
     "date": "2026-04-28",
-    "title": "Daily dashboard refresh completed",
-    "summary": "Gateway stable (pid 32940, 814MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (0 errors). System uptime: 13d 2h. All nominal.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring"
-    ]
+    "event": "Daily dashboard refresh completed — Gateway stable (pid 32940, 814MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (0 errors). System uptime: 13d 2h. All nominal.",
+    "type": "ops"
   },
   {
     "date": "2026-04-29",
-    "title": "Daily dashboard refresh completed",
-    "summary": "Gateway stable (pid 32940, 853MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (0 errors). System uptime: 14d 2h. All nominal.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring"
-    ]
+    "event": "Daily dashboard refresh completed — Gateway stable (pid 32940, 853MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (0 errors). System uptime: 14d 2h. All nominal.",
+    "type": "ops"
   },
   {
     "date": "2026-05-08",
-    "title": "Daily dashboard refresh completed",
-    "summary": "OpenClaw upgraded to v2026.5.3-1. Gateway stable (pid 98343, 735MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (3 errors: system-health-patrol, morning-post, daily-token-ledger). System uptime: 23d 2h 32m.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring",
-      "upgrade"
-    ]
+    "event": "Daily dashboard refresh completed — OpenClaw upgraded to v2026.5.3-1. Gateway stable (pid 98343, 735MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (3 errors: system-health-patrol, morning-post, daily-token-ledger). System uptime: 23d 2h 32m.",
+    "type": "ops"
   },
   {
     "date": "2026-05-09",
-    "title": "Daily dashboard refresh completed",
-    "summary": "OpenClaw v2026.5.7. Gateway stable (pid 22341, 774MB memory), disk 8% (12/228GB), 137 memory entries, 22 cron jobs (0 errors). All systems healthy. System uptime: 24d 2h 32m.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring",
-      "upgrade"
-    ]
+    "event": "Daily dashboard refresh completed — OpenClaw v2026.5.7. Gateway stable (pid 22341, 774MB memory), disk 8% (12/228GB), 137 memory entries, 22 cron jobs (0 errors). All systems healthy. System uptime: 24d 2h 32m.",
+    "type": "ops"
   },
   {
     "date": "2026-05-09",
@@ -383,102 +301,53 @@
   },
   {
     "date": "2026-05-09",
-    "title": "Cron errors cleared — all jobs recovered",
-    "summary": "3 previously errored jobs (system-health-patrol, morning-post, daily-token-ledger) now report ok status. 0 errors across all 22 cron jobs.",
-    "tags": [
-      "ops",
-      "cron",
-      "recovery"
-    ]
+    "event": "Cron errors cleared — all jobs recovered — 3 previously errored jobs (system-health-patrol, morning-post, daily-token-ledger) now report ok status. 0 errors across all 22 cron jobs.",
+    "type": "ops"
   },
   {
     "date": "2026-05-10",
-    "title": "Daily dashboard refresh completed",
-    "summary": "OpenClaw v2026.5.7 stable. Gateway running (pid 22341, 785MB memory), disk 9% (12/228GB), 137 memory entries, 22 cron jobs (0 errors). System uptime: 25d 2h 32m. All systems healthy.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring"
-    ]
+    "event": "Daily dashboard refresh completed — OpenClaw v2026.5.7 stable. Gateway running (pid 22341, 785MB memory), disk 9% (12/228GB), 137 memory entries, 22 cron jobs (0 errors). System uptime: 25d 2h 32m. All systems healthy.",
+    "type": "ops"
   },
   {
     "date": "2026-05-12",
-    "title": "Gateway process restart detected",
-    "summary": "New PID 39710 (previously 22341). Memory footprint 701MB. System uptime 26d 2h. All services stable.",
-    "tags": [
-      "ops",
-      "gateway",
-      "note"
-    ]
+    "event": "Gateway process restart detected — New PID 39710 (previously 22341). Memory footprint 701MB. System uptime 26d 2h. All services stable.",
+    "type": "ops"
   },
   {
     "date": "2026-05-12",
-    "title": "Daily dashboard refresh completed",
-    "summary": "OpenClaw v2026.5.7 stable. Gateway running (pid 39710, 701MB memory), disk 9% (12/228GB), 137 memory entries, 22 cron jobs (0 errors). System uptime: 26d 2h. All systems healthy.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring"
-    ]
+    "event": "Daily dashboard refresh completed — OpenClaw v2026.5.7 stable. Gateway running (pid 39710, 701MB memory), disk 9% (12/228GB), 137 memory entries, 22 cron jobs (0 errors). System uptime: 26d 2h. All systems healthy.",
+    "type": "ops"
   },
   {
     "date": "2026-05-13",
-    "title": "Daily dashboard refresh completed",
-    "summary": "OpenClaw v2026.5.7 stable. Gateway running (pid 39710, 701MB memory), disk 9% (12/228GB), 137 memory entries, 22 cron jobs (1 error: daily-token-ledger). System uptime: 27d+. All core systems healthy.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring"
-    ]
+    "event": "Daily dashboard refresh completed — OpenClaw v2026.5.7 stable. Gateway running (pid 39710, 701MB memory), disk 9% (12/228GB), 137 memory entries, 22 cron jobs (1 error: daily-token-ledger). System uptime: 27d+. All core systems healthy.",
+    "type": "ops"
   },
   {
     "date": "2026-05-13",
-    "title": "Cron job needs attention",
-    "summary": "daily-token-ledger returned to error state. Other 21 cron jobs healthy.",
-    "tags": [
-      "ops",
-      "cron"
-    ]
+    "event": "Cron job needs attention — daily-token-ledger returned to error state. Other 21 cron jobs healthy.",
+    "type": "ops"
   },
   {
     "date": "2026-05-14",
-    "title": "Daily dashboard refresh completed",
-    "summary": "OpenClaw v2026.5.7 stable. Gateway running (pid 39710, 707MB memory), disk 9% (12/228GB), 137 memory entries, 22 cron jobs (1 error: daily-token-ledger). System uptime: 29d 2h 32m.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring"
-    ]
+    "event": "Daily dashboard refresh completed — OpenClaw v2026.5.7 stable. Gateway running (pid 39710, 707MB memory), disk 9% (12/228GB), 137 memory entries, 22 cron jobs (1 error: daily-token-ledger). System uptime: 29d 2h 32m.",
+    "type": "ops"
   },
   {
     "date": "2026-05-15",
-    "title": "Daily dashboard refresh completed",
-    "summary": "OpenClaw v2026.5.7 stable. Gateway running (pid 39710, 707MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (1 error: daily-token-ledger). System uptime: 30d 0h 0m.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring"
-    ]
+    "event": "Daily dashboard refresh completed — OpenClaw v2026.5.7 stable. Gateway running (pid 39710, 707MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (1 error: daily-token-ledger). System uptime: 30d 0h 0m.",
+    "type": "ops"
   },
   {
     "date": "2026-05-16",
-    "title": "Daily dashboard refresh completed",
-    "summary": "OpenClaw v2026.5.7 stable. Gateway running (pid 39710, 691MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (1 error: daily-token-ledger). System uptime: 32d 2h 32m.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring"
-    ]
+    "event": "Daily dashboard refresh completed — OpenClaw v2026.5.7 stable. Gateway running (pid 39710, 691MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (1 error: daily-token-ledger). System uptime: 32d 2h 32m.",
+    "type": "ops"
   },
   {
     "date": "2026-05-18",
-    "title": "Daily dashboard refresh completed",
-    "summary": "OpenClaw v2026.5.7 stable. Gateway running (pid 39710, 691MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (1 error: daily-token-ledger). System uptime: 32d 3h 0m. All core systems nominal.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring"
-    ]
+    "event": "Daily dashboard refresh completed — OpenClaw v2026.5.7 stable. Gateway running (pid 39710, 691MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (1 error: daily-token-ledger). System uptime: 32d 3h 0m. All core systems nominal.",
+    "type": "ops"
   },
   {
     "date": "2026-05-20",
@@ -487,22 +356,12 @@
   },
   {
     "date": "2026-05-20",
-    "title": "Gateway process restart detected",
-    "summary": "New PID 14560 (previously 39710). Memory footprint 649MB. All services stable.",
-    "tags": [
-      "ops",
-      "gateway",
-      "note"
-    ]
+    "event": "Gateway process restart detected — New PID 14560 (previously 39710). Memory footprint 649MB. All services stable.",
+    "type": "ops"
   },
   {
     "date": "2026-05-20",
-    "title": "Daily dashboard refresh completed",
-    "summary": "OpenClaw v2026.5.18 stable. Gateway running (pid 14560, 649MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (1 error: daily-token-ledger). All core systems nominal.",
-    "tags": [
-      "ops",
-      "dashboard",
-      "monitoring"
-    ]
+    "event": "Daily dashboard refresh completed — OpenClaw v2026.5.18 stable. Gateway running (pid 14560, 649MB memory), disk 9% (12/228GB), 137 memory entries, 24 cron jobs (1 error: daily-token-ledger). All core systems nominal.",
+    "type": "ops"
   }
 ]
