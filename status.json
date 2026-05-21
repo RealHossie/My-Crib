@@ -21,7 +21,7 @@
     }
   },
   "system": {
-    "uptime_days": 36,
+    "uptime_days": 37,
     "uptime_hours": 2,
     "uptime_minutes": 32,
     "disk": {
@@ -31,18 +31,18 @@
       "usage_percent": 13
     },
     "load_average": {
-      "1m": 1.36,
-      "5m": 1.18,
-      "15m": 1.11
+      "1m": 1.12,
+      "5m": 1.07,
+      "15m": 1.06
     }
   },
   "cron": {
     "total_jobs": 21,
     "status_summary": {
       "running": 1,
-      "ok": 2,
+      "ok": 20,
       "error": 0,
-      "idle": 17
+      "idle": 0
     },
     "dashboard_update_job": {
       "id": "55b45a02-9568-4e70-8727-8834387b650f",
