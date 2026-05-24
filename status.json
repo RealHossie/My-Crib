@@ -21,7 +21,7 @@
     }
   },
   "system": {
-    "uptime_days": 39,
+    "uptime_days": 40,
     "uptime_hours": 2,
     "uptime_minutes": 32,
     "disk": {
@@ -30,10 +30,15 @@
       "available_gb": 113,
       "usage_percent": 13
     },
+    "memory": {
+      "free_percent": 75,
+      "pageins_total": 25385553,
+      "pageouts_total": 108406
+    },
     "load_average": {
-      "1m": 0.98,
+      "1m": 0.96,
       "5m": 1.02,
-      "15m": 1.03
+      "15m": 1.05
     }
   },
   "cron": {
@@ -63,7 +68,12 @@
       "agent:jazmin": 3
     },
     "retrieval_mode": "hybrid",
-    "lancedb_pro": true
+    "lancedb_pro": true,
+    "smart_extraction": {
+      "enabled": true,
+      "model": "anthropic/claude-sonnet-4-6",
+      "noise_filtering": true
+    }
   },
   "agents": [
     {
