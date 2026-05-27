@@ -1,21 +1,22 @@
 {
-  "generated_at": "2026-05-27T03:00:00+08:00",
-  "timestamp": 1748112000,
+  "generated_at": "2026-05-28T03:00:00+08:00",
+  "timestamp": 1779908400,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
     "memory": "16GB Unified",
     "storage": "256GB SSD",
-    "os": "macOS 26.4.1 (Darwin 25.4.0 arm64)"
+    "os": "macOS 26.5.0 (Darwin 25.5.0 arm64)"
   },
   "openclaw": {
-    "version": "2026.5.18 (50a2481)",
+    "version": "2026.5.26 (10ad3aa)",
     "gateway": {
       "status": "running",
-      "pid": 14560,
+      "pid": 1717,
       "port": 18789,
       "bind": "loopback",
-      "memory_mb": 630,
+      "memory_mb": 480,
+      "memory_percent": 3.0,
       "uptime_hours": 57.35,
       "started_at": "2026-05-20T19:00:00+08:00"
     }
@@ -26,19 +27,19 @@
     "uptime_minutes": 0,
     "disk": {
       "total_gb": 228,
-      "used_gb": 16,
-      "available_gb": 113,
-      "usage_percent": 13
+      "used_gb": 12,
+      "available_gb": 134,
+      "usage_percent": 9
     },
     "memory": {
-      "free_percent": 75,
-      "pageins_total": 25385553,
-      "pageouts_total": 108406
+      "free_percent": 85,
+      "pageins_total": 18232,
+      "pageouts_total": null
     },
     "load_average": {
-      "1m": 1.09,
-      "5m": 1.11,
-      "15m": 1.06
+      "1m": null,
+      "5m": null,
+      "15m": null
     }
   },
   "cron": {
@@ -64,11 +65,11 @@
     ]
   },
   "memory": {
-    "total_entries": 137,
+    "total_entries": 336,
     "daily_files": 49,
     "memory_md_lines": 148,
     "by_scope": {
-      "agent:main": 131,
+      "agent:main": 330,
       "agent:queen-secretary": 3,
       "agent:jazmin": 3
     },
@@ -121,7 +122,7 @@
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-05-27T03:00:00+08:00",
+    "timestamp": "2026-05-28T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
