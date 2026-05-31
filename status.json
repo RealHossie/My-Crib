@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-31T03:00:00+08:00",
-  "timestamp": 1780167600,
+  "generated_at": "2026-06-01T03:00:00+08:00",
+  "timestamp": 1780254000,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -9,7 +9,7 @@
     "os": "macOS 26.5.0 (Darwin 25.5.0 arm64)"
   },
   "openclaw": {
-    "version": "2026.5.26 (50a2481)",
+    "version": "2026.5.26 (10ad3aa)",
     "gateway": {
       "status": "running",
       "pid": 1717,
@@ -17,14 +17,12 @@
       "bind": "loopback",
       "memory_mb": 662,
       "memory_percent": 3.9,
-      "uptime_hours": 59.35,
+      "uptime_hours": 83.35,
       "started_at": "2026-05-20T19:00:00+08:00"
     }
   },
   "system": {
-    "uptime_days": 3,
-    "uptime_hours": 0,
-    "uptime_minutes": 0,
+    "uptime_days": 42,
     "disk": {
       "total_gb": 228,
       "used_gb": 12,
@@ -32,54 +30,50 @@
       "usage_percent": 9
     },
     "memory": {
-      "free_percent": 85,
-      "pages_free": 6033,
-      "pages_wired": 94610
+      "free_percent": 45,
+      "pages_free": 8722,
+      "pages_active": 432873,
+      "pages_speculative": 4436
     },
     "load_average": {
-      "1m": 1.18,
-      "5m": 1.06,
-      "15m": 1.01
+      "1m": 1.15,
+      "5m": 1.08,
+      "15m": 1.02
     }
   },
   "cron": {
-    "total_jobs": 24,
+    "total_jobs": 1,
     "status_summary": {
       "running": 1,
-      "ok": 19,
-      "error": 4,
+      "ok": 0,
+      "error": 0,
       "idle": 0
     },
     "dashboard_update_job": {
       "id": "55b45a02-9568-4e70-8727-8834387b650f",
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
-      "last_run": "2026-05-30T03:00:00+08:00",
-      "current_run_start": "2026-05-31T03:00:00+08:00",
-      "status": "running"
-    },
-    "recent_errors": [
-      "农历3月初一前一天 (timeout)",
-      "gaigao-basketball-incremental (network timeout)",
-      "gaigao-basketball-full (network timeout)",
-      "system-health-patrol (timeout)"
-    ]
+      "last_run": "2026-05-31T03:00:00+08:00",
+      "current_run_start": "2026-06-01T03:00:00+08:00",
+      "status": "in_progress",
+      "consecutive_errors": 2,
+      "last_error": "timeout (model-call-started)"
+    }
   },
   "memory": {
     "total_entries": 336,
-    "daily_files": 51,
+    "daily_files": 52,
     "memory_md_lines": 148,
+    "lancedb_pro": {
+      "enabled": true,
+      "db_size_mb": 5.3,
+      "total_files": 486,
+      "smart_extraction": true
+    },
     "by_scope": {
       "agent:main": 330,
       "agent:queen-secretary": 3,
       "agent:jazmin": 3
-    },
-    "retrieval_mode": "hybrid",
-    "lancedb_pro": true,
-    "smart_extraction": {
-      "enabled": true,
-      "model": "anthropic/claude-sonnet-4-6",
-      "noise_filtering": true
     }
   },
   "agents": [
@@ -100,21 +94,25 @@
       "status": "idle"
     }
   ],
-  "projects": [
-    {
-      "id": "card-sniper",
-      "name": "球星卡靶向系统",
-      "status": "active",
-      "phase": "Phase 3 数据采集中",
-      "progress": "2025+ cards indexed"
-    },
-    {
-      "id": "morning-report",
-      "name": "Morning Post PDF",
-      "status": "degraded",
-      "note": "Canvas PDF 生成问题（已知）"
-    }
-  ],
+  "plugins": {
+    "enabled": [
+      "memory-lancedb-pro",
+      "telegram",
+      "feishu",
+      "minimax",
+      "anthropic",
+      "ollama",
+      "openai",
+      "openrouter",
+      "brave"
+    ],
+    "memory_slot": "memory-lancedb-pro"
+  },
+  "models": {
+    "primary": "openrouter/auto",
+    "fallback": "minimax/MiniMax-M2.7-highspeed",
+    "available_count": 10
+  },
   "health": {
     "gateway": "healthy",
     "cron": "degraded",
@@ -123,7 +121,7 @@
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-05-31T03:00:00+08:00",
+    "timestamp": "2026-06-01T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
