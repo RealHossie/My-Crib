@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-01T03:00:00+08:00",
-  "timestamp": 1780254000,
+  "generated_at": "2026-06-02T03:00:00+08:00",
+  "timestamp": 1780340400,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -22,7 +22,7 @@
     }
   },
   "system": {
-    "uptime_days": 42,
+    "uptime_days": 43,
     "disk": {
       "total_gb": 228,
       "used_gb": 12,
@@ -42,36 +42,43 @@
     }
   },
   "cron": {
-    "total_jobs": 1,
+    "total_jobs": 24,
     "status_summary": {
       "running": 1,
-      "ok": 0,
-      "error": 0,
+      "ok": 20,
+      "error": 4,
       "idle": 0
     },
+    "error_jobs": [
+      "system-health-patrol",
+      "gaigao-basketball-incremental",
+      "gaigao-basketball-full",
+      "농력3월초1전날"
+    ],
+    "error_pattern": "network_timeout",
     "dashboard_update_job": {
       "id": "55b45a02-9568-4e70-8727-8834387b650f",
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
-      "last_run": "2026-05-31T03:00:00+08:00",
-      "current_run_start": "2026-06-01T03:00:00+08:00",
+      "last_run": "2026-06-01T03:00:00+08:00",
+      "current_run_start": "2026-06-02T03:00:00+08:00",
       "status": "in_progress",
-      "consecutive_errors": 2,
-      "last_error": "timeout (model-call-started)"
+      "consecutive_errors": 3,
+      "last_error": "timeout (tool-execution-started)"
     }
   },
   "memory": {
-    "total_entries": 336,
+    "total_entries": 338,
     "daily_files": 52,
-    "memory_md_lines": 148,
+    "memory_md_lines": 150,
     "lancedb_pro": {
       "enabled": true,
-      "db_size_mb": 5.3,
-      "total_files": 486,
+      "db_size_mb": 5.4,
+      "total_files": 492,
       "smart_extraction": true
     },
     "by_scope": {
-      "agent:main": 330,
+      "agent:main": 332,
       "agent:queen-secretary": 3,
       "agent:jazmin": 3
     }
@@ -117,11 +124,11 @@
     "gateway": "healthy",
     "cron": "degraded",
     "memory": "optimal",
-    "disk": "excellent",
+    "disk": "good",
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-06-01T03:00:00+08:00",
+    "timestamp": "2026-06-02T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
