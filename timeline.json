@@ -423,5 +423,15 @@
     "date": "2026-06-02",
     "event": "Daily dashboard refresh completed — OpenClaw v2026.5.26 stable. Gateway running (pid 1717, 662MB memory), disk 9% (12/228GB), 338 memory entries (52 daily files, lancedb-pro: 5.4MB, 492 files), 24 cron jobs (4 errors: network timeout). System uptime: 83h 21m. All core systems nominal.",
     "type": "ops"
+  },
+  {
+    "date": "2026-06-04",
+    "event": "Daily dashboard refresh completed — OpenClaw v2026.5.28 stable. Gateway running (pid 4053, 651MB memory), disk 9% (12/228GB), 338 memory entries (52 daily files, lancedb-pro: 5.4MB, 492 files), 1 cron job (dashboard-update in progress). System uptime ~15d. All core systems nominal.",
+    "type": "ops"
+  },
+  {
+    "date": "2026-06-04",
+    "event": "OpenClaw 升级至 v2026.5.28（从 v2026.5.26 升级，Gateway 重启后新 PID 4053）",
+    "type": "milestone"
   }
 ]

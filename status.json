@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-03T03:02:58+08:00",
-  "timestamp": 1780426978,
+  "generated_at": "2026-06-04T03:02:00+08:00",
+  "timestamp": 1780513320,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -9,98 +9,57 @@
     "os": "macOS 26.5.0 (Darwin 25.5.0 arm64)"
   },
   "openclaw": {
-    "version": "2026.5.26 (10ad3aa)",
+    "version": "2026.5.28",
     "gateway": {
       "status": "running",
       "pid": 4053,
       "port": 18789,
       "bind": "loopback",
       "memory_mb": 651,
-      "memory_percent": 3.9,
-      "uptime_hours": 84.35,
+      "uptime_hours": 96,
       "started_at": "2026-05-20T19:00:00+08:00"
     }
   },
   "system": {
-    "uptime_days": 44,
+    "uptime_days": 15,
     "disk": {
       "total_gb": 228,
       "used_gb": 12,
-      "available_gb": 133,
+      "available_gb": 216,
       "usage_percent": 9
     },
     "memory": {
-      "free_percent": 45,
-      "pages_free": 8722,
-      "pages_active": 432873,
-      "pages_speculative": 4436
-    },
-    "load_average": {
-      "1m": 1.15,
-      "5m": 1.08,
-      "15m": 1.02
+      "process_memory_mb": 693,
+      "note": "total node processes (openclaw + others)"
     }
   },
   "cron": {
-    "total_jobs": 24,
+    "total_jobs": 1,
     "status_summary": {
       "running": 1,
-      "ok": 20,
-      "error": 4,
-      "idle": 0
+      "error": 0
     },
-    "error_jobs": [
-      "system-health-patrol",
-      "gaigao-basketball-incremental",
-      "gaigao-basketball-full",
-      "농력3월초1전날"
-    ],
-    "error_pattern": "network_timeout",
     "dashboard_update_job": {
       "id": "55b45a02-9568-4e70-8727-8834387b650f",
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
       "last_run": "2026-06-02T03:00:00+08:00",
-      "current_run_start": "2026-06-03T03:02:00+08:00",
+      "current_run_start": "2026-06-04T03:02:00+08:00",
       "status": "in_progress",
-      "consecutive_errors": 0,
-      "last_error": null
+      "consecutive_errors": 1,
+      "last_error": "timeout (previous run)"
     }
   },
   "memory": {
     "total_entries": 338,
     "daily_files": 52,
-    "memory_md_lines": 150,
     "lancedb_pro": {
       "enabled": true,
       "db_size_mb": 5.4,
       "total_files": 492,
       "smart_extraction": true
-    },
-    "by_scope": {
-      "agent:main": 332,
-      "agent:queen-secretary": 3,
-      "agent:jazmin": 3
     }
   },
-  "agents": [
-    {
-      "id": "main",
-      "name": "主谋",
-      "role": "Team Leader",
-      "status": "active"
-    },
-    {
-      "id": "queen-secretary",
-      "name": "女秘书",
-      "status": "idle"
-    },
-    {
-      "id": "jazmin",
-      "name": "Jazmin",
-      "status": "idle"
-    }
-  ],
   "plugins": {
     "enabled": [
       "memory-lancedb-pro",
@@ -122,13 +81,13 @@
   },
   "health": {
     "gateway": "healthy",
-    "cron": "degraded",
+    "cron": "nominal",
     "memory": "optimal",
     "disk": "good",
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-06-03T03:02:58+08:00",
+    "timestamp": "2026-06-04T03:02:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
