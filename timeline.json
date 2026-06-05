@@ -431,7 +431,12 @@
   },
   {
     "date": "2026-06-04",
-    "event": "OpenClaw 升级至 v2026.5.28（从 v2026.5.26 升级，Gateway 重启后新 PID 4053）",
+    "event": "OpenClaw 升级至 v2026.5.28（从 v2026.5.26 升级，Gateway 重启）",
     "type": "milestone"
+  },
+  {
+    "date": "2026-06-06",
+    "event": "Daily dashboard refresh in progress — OpenClaw v2026.5.28 stable. Gateway running (memory 705MB), disk 9% (12/228GB), 338 memory entries (52 daily files, lancedb-pro: 5.4MB, 5342 files), 1 cron job (dashboard-update in progress). System uptime ~15d. All core systems nominal.",
+    "type": "ops"
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-04T03:02:00+08:00",
-  "timestamp": 1780513320,
+  "generated_at": "2026-06-06T03:00:00+08:00",
+  "timestamp": 1780686000,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -12,12 +12,11 @@
     "version": "2026.5.28",
     "gateway": {
       "status": "running",
-      "pid": 4053,
-      "port": 18789,
-      "bind": "loopback",
-      "memory_mb": 651,
-      "uptime_hours": 96,
-      "started_at": "2026-05-20T19:00:00+08:00"
+      "pid_stub": "***",
+      "port": "loopback",
+      "memory_mb": 705,
+      "uptime_hours": 120,
+      "started_at": "2026-05-27T03:00:00+08:00"
     }
   },
   "system": {
@@ -29,8 +28,8 @@
       "usage_percent": 9
     },
     "memory": {
-      "process_memory_mb": 693,
-      "note": "total node processes (openclaw + others)"
+      "process_memory_mb": 705,
+      "note": "openclaw gateway process"
     }
   },
   "cron": {
@@ -40,23 +39,21 @@
       "error": 0
     },
     "dashboard_update_job": {
-      "id": "55b45a02-9568-4e70-8727-8834387b650f",
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
-      "last_run": "2026-06-02T03:00:00+08:00",
-      "current_run_start": "2026-06-04T03:02:00+08:00",
       "status": "in_progress",
-      "consecutive_errors": 1,
-      "last_error": "timeout (previous run)"
+      "last_run_duration_sec": 53,
+      "consecutive_errors": 2
     }
   },
   "memory": {
     "total_entries": 338,
     "daily_files": 52,
+    "memory_lines_curated": 188,
     "lancedb_pro": {
       "enabled": true,
       "db_size_mb": 5.4,
-      "total_files": 492,
+      "total_files": 5342,
       "smart_extraction": true
     }
   },
@@ -81,13 +78,13 @@
   },
   "health": {
     "gateway": "healthy",
-    "cron": "nominal",
+    "cron": "operational",
     "memory": "optimal",
     "disk": "good",
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-06-04T03:02:00+08:00",
+    "timestamp": "2026-06-06T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
