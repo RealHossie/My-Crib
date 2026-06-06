@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-06T03:00:00+08:00",
-  "timestamp": 1780686000,
+  "generated_at": "2026-06-07T03:00:00+08:00",
+  "timestamp": 1780772400,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -12,11 +12,11 @@
     "version": "2026.5.28",
     "gateway": {
       "status": "running",
-      "pid_stub": "***",
-      "port": "loopback",
-      "memory_mb": 705,
+      "pid": 29736,
+      "port": "loopback:18789",
+      "memory_mb": 835,
       "uptime_hours": 120,
-      "started_at": "2026-05-27T03:00:00+08:00"
+      "started_at": "2026-05-28T03:00:00+08:00"
     }
   },
   "system": {
@@ -28,7 +28,7 @@
       "usage_percent": 9
     },
     "memory": {
-      "process_memory_mb": 705,
+      "process_memory_mb": 835,
       "note": "openclaw gateway process"
     }
   },
@@ -36,24 +36,25 @@
     "total_jobs": 1,
     "status_summary": {
       "running": 1,
-      "error": 0
+      "error": 0,
+      "ok": 0
     },
     "dashboard_update_job": {
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
-      "status": "in_progress",
-      "last_run_duration_sec": 53,
-      "consecutive_errors": 2
+      "status": "running",
+      "last_run_duration_sec": 50,
+      "consecutive_errors": 0
     }
   },
   "memory": {
     "total_entries": 338,
-    "daily_files": 52,
+    "daily_files": 51,
     "memory_lines_curated": 188,
     "lancedb_pro": {
       "enabled": true,
-      "db_size_mb": 5.4,
-      "total_files": 5342,
+      "db_size_mb": 9.4,
+      "total_files": 732,
       "smart_extraction": true
     }
   },
@@ -67,7 +68,8 @@
       "ollama",
       "openai",
       "openrouter",
-      "brave"
+      "brave",
+      "codex"
     ],
     "memory_slot": "memory-lancedb-pro"
   },
@@ -84,7 +86,7 @@
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-06-06T03:00:00+08:00",
+    "timestamp": "2026-06-07T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
