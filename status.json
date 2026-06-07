@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-07T03:00:00+08:00",
-  "timestamp": 1780772400,
+  "generated_at": "2026-06-08T03:00:00+08:00",
+  "timestamp": 1780858800,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -9,26 +9,27 @@
     "os": "macOS 26.5.0 (Darwin 25.5.0 arm64)"
   },
   "openclaw": {
-    "version": "2026.5.28",
+    "version": "2026.6.1",
     "gateway": {
       "status": "running",
       "pid": 29736,
       "port": "loopback:18789",
-      "memory_mb": 835,
+      "memory_mb": 684,
       "uptime_hours": 120,
       "started_at": "2026-05-28T03:00:00+08:00"
     }
   },
   "system": {
-    "uptime_days": 15,
+    "uptime_days": 16,
     "disk": {
       "total_gb": 228,
-      "used_gb": 12,
-      "available_gb": 216,
+      "used_gb": 20,
+      "available_gb": 208,
       "usage_percent": 9
     },
     "memory": {
-      "process_memory_mb": 835,
+      "process_memory_mb": 684,
+      "system_free_percent": 85,
       "note": "openclaw gateway process"
     }
   },
@@ -43,7 +44,7 @@
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
       "status": "running",
-      "last_run_duration_sec": 50,
+      "last_run_duration_sec": 54,
       "consecutive_errors": 0
     }
   },
@@ -86,7 +87,7 @@
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-06-07T03:00:00+08:00",
+    "timestamp": "2026-06-08T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
