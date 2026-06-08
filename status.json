@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-08T03:00:00+08:00",
-  "timestamp": 1780858800,
+  "generated_at": "2026-06-09T03:00:00+08:00",
+  "timestamp": 1780945200,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -14,22 +14,22 @@
       "status": "running",
       "pid": 29736,
       "port": "loopback:18789",
-      "memory_mb": 684,
-      "uptime_hours": 120,
+      "memory_mb": 703,
+      "uptime_hours": 144,
       "started_at": "2026-05-28T03:00:00+08:00"
     }
   },
   "system": {
-    "uptime_days": 16,
+    "uptime_days": 17,
     "disk": {
       "total_gb": 228,
-      "used_gb": 20,
-      "available_gb": 208,
+      "used_gb": 12,
+      "available_gb": 132,
       "usage_percent": 9
     },
     "memory": {
-      "process_memory_mb": 684,
-      "system_free_percent": 85,
+      "process_memory_mb": 703,
+      "system_free_percent": 87,
       "note": "openclaw gateway process"
     }
   },
@@ -44,7 +44,7 @@
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
       "status": "running",
-      "last_run_duration_sec": 54,
+      "last_run_duration_sec": 42,
       "consecutive_errors": 0
     }
   },
@@ -54,7 +54,7 @@
     "memory_lines_curated": 188,
     "lancedb_pro": {
       "enabled": true,
-      "db_size_mb": 9.4,
+      "db_size_mb": 9.5,
       "total_files": 732,
       "smart_extraction": true
     }
@@ -87,7 +87,7 @@
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-06-08T03:00:00+08:00",
+    "timestamp": "2026-06-09T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
