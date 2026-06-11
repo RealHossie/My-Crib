@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-11T03:02:00+08:00",
-  "timestamp": 1781122920,
+  "generated_at": "2026-06-12T03:02:00+08:00",
+  "timestamp": 1781209320,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -9,10 +9,10 @@
     "os": "macOS 26.5.0 (Darwin 25.5.0 arm64)"
   },
   "openclaw": {
-    "version": "2026.6.1",
+    "version": "2026.6.5",
     "gateway": {
       "status": "running",
-      "pid": 29736,
+      "pid": 89323,
       "port": "loopback:18789",
       "memory_mb": 703,
       "uptime_hours": 336,
@@ -50,7 +50,7 @@
   },
   "memory": {
     "total_entries": 338,
-    "daily_files": 51,
+    "daily_files": 52,
     "memory_lines_curated": 188,
     "lancedb_pro": {
       "enabled": true,
@@ -87,7 +87,7 @@
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-06-11T03:02:00+08:00",
+    "timestamp": "2026-06-12T03:02:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }

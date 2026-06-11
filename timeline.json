@@ -463,5 +463,10 @@
     "date": "2026-06-11",
     "event": "Daily dashboard refresh completed — OpenClaw v2026.6.1 stable. Gateway running (pid 29736, 703MB memory), disk 9% (12/228GB), 338 memory entries (51 daily files, lancedb-pro: 9.5MB, 732 files), 1 cron job (dashboard-update running, last run 97s). System uptime ~14d. All core systems nominal.",
     "type": "ops"
+  },
+  {
+    "date": "2026-06-12",
+    "event": "Gateway 重启 — OpenClaw 升级至 v2026.6.5，PID 从 29736 切换至 89323，memory 703MB，all systems nominal",
+    "type": "ops"
   }
 ]
