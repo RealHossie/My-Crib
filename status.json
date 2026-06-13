@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-13T03:02:00+08:00",
-  "timestamp": 1781295720,
+  "generated_at": "2026-06-14T03:00:00+08:00",
+  "timestamp": 1781382000,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -13,21 +13,23 @@
     "gateway": {
       "status": "running",
       "port": "loopback:18789",
-      "uptime_hours": 360,
-      "note": "auto-assigned pid"
+      "uptime_hours": 384,
+      "note": "stable operation"
     }
   },
   "system": {
-    "uptime_days": 15,
+    "uptime_days": 16,
     "disk": {
-      "total_gb": 130,
-      "used_gb": 49,
-      "available_gb": 77,
+      "total_gb": 228,
+      "used_gb": 78,
+      "available_gb": 129,
       "usage_percent": 38
     },
     "memory": {
-      "system_free_percent": 83,
-      "note": "system-wide free percentage"
+      "pages_free": 16775,
+      "pages_active": 415557,
+      "system_free_percent": 79,
+      "note": "system-wide pages"
     }
   },
   "cron": {
@@ -41,18 +43,18 @@
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
       "status": "running",
-      "note": "daily 03:00 CST"
+      "note": "daily 03:00 CST automation"
     }
   },
   "memory": {
     "total_entries": 338,
-    "daily_files": 52,
-    "memory_lines_curated": 188,
+    "daily_files": 53,
+    "memory_lines_curated": 190,
     "lancedb_pro": {
       "enabled": true,
-      "db_size_mb": 10,
-      "total_files": 732,
-      "smart_extraction": true
+      "vector_files": 740,
+      "smart_extraction": true,
+      "auto_recall": "enabled"
     }
   },
   "plugins": {
@@ -68,12 +70,22 @@
       "brave",
       "codex"
     ],
-    "memory_slot": "memory-lancedb-pro"
+    "memory_slot": "memory-lancedb-pro",
+    "count": 10
   },
   "models": {
     "primary": "openrouter/auto",
     "fallback": "minimax/MiniMax-M2.7-highspeed",
-    "available_count": 10
+    "available_count": 10,
+    "note": "multi-provider hybrid routing"
+  },
+  "agents": {
+    "total": 3,
+    "list": [
+      "main",
+      "queen-secretary",
+      "jazmin"
+    ]
   },
   "health": {
     "gateway": "healthy",
@@ -83,7 +95,7 @@
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-06-13T03:02:00+08:00",
+    "timestamp": "2026-06-14T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
