@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-16T03:00:00+08:00",
-  "timestamp": 1781554800,
+  "generated_at": "2026-06-17T03:00:00+08:00",
+  "timestamp": 1781641200,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -12,13 +12,16 @@
     "version": "2026.6.5",
     "gateway": {
       "status": "running",
+      "pid": 89323,
+      "memory_mb": 763,
       "port": "loopback:18789",
-      "uptime_hours": 432,
+      "uptime_hours": 456,
       "note": "stable operation"
     }
   },
   "system": {
-    "uptime_days": 18,
+    "uptime_days": 14,
+    "uptime_hours": 6.4,
     "disk": {
       "total_gb": 228,
       "used_gb": 12,
@@ -48,7 +51,7 @@
   },
   "memory": {
     "total_entries": 340,
-    "daily_files": 54,
+    "daily_files": 49,
     "memory_lines_curated": 192,
     "lancedb_pro": {
       "enabled": true,
@@ -95,7 +98,7 @@
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-06-16T03:00:00+08:00",
+    "timestamp": "2026-06-17T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
