@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-19T03:00:00+08:00",
-  "timestamp": 1781809200,
+  "generated_at": "2026-06-20T03:00:00+08:00",
+  "timestamp": 1781895600,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -98,7 +98,7 @@
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-06-19T03:00:00+08:00",
+    "timestamp": "2026-06-20T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
