@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-21T03:00:00+08:00",
-  "timestamp": 1781982000,
+  "generated_at": "2026-06-22T03:02:00+08:00",
+  "timestamp": 1782068520,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -20,8 +20,9 @@
     }
   },
   "system": {
-    "uptime_days": 15,
-    "uptime_hours": 0,
+    "uptime_days": 19,
+    "uptime_hours": 6,
+    "uptime_minutes": 29,
     "disk": {
       "total_gb": 228,
       "used_gb": 12,
@@ -29,9 +30,9 @@
       "usage_percent": 9
     },
     "memory": {
-      "pages_free": 14855,
-      "pages_active": 411870,
-      "system_free_percent": 94,
+      "pages_free": 21823,
+      "pages_active": 394695,
+      "system_free_percent": 3,
       "note": "system-wide pages, well below threshold"
     }
   },
@@ -39,14 +40,17 @@
     "total_jobs": 1,
     "status_summary": {
       "running": 1,
-      "error": 0,
+      "error": 1,
       "ok": 0
     },
     "dashboard_update_job": {
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
-      "status": "running",
-      "note": "daily 03:00 CST automation"
+      "status": "error",
+      "last_run_status": "timeout",
+      "last_duration_ms": 120214,
+      "consecutive_errors": 1,
+      "note": "job timed out; cron engine running"
     }
   },
   "memory": {
@@ -92,13 +96,13 @@
   },
   "health": {
     "gateway": "healthy",
-    "cron": "operational",
+    "cron": "degraded",
     "memory": "optimal",
     "disk": "good",
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-06-21T03:00:00+08:00",
+    "timestamp": "2026-06-22T03:02:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
