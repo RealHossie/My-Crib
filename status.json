@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-06-22T03:02:00+08:00",
-  "timestamp": 1782068520,
+  "generated_at": "2026-06-23T03:00:00+08:00",
+  "timestamp": 1782154800,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
     "memory": "16GB Unified",
     "storage": "256GB SSD",
-    "os": "macOS 26.5.0 (Darwin 25.5.0 arm64)"
+    "os": "macOS 26.5.1 (Darwin 25.5.1 arm64)"
   },
   "openclaw": {
     "version": "2026.6.5",
     "gateway": {
       "status": "running",
-      "pid": 89323,
-      "memory_mb": 763,
+      "pid": 21865,
+      "memory_mb": 682,
       "port": "loopback:18789",
       "uptime_hours": 480,
       "note": "stable operation"
     }
   },
   "system": {
-    "uptime_days": 19,
+    "uptime_days": 20,
     "uptime_hours": 6,
-    "uptime_minutes": 29,
+    "uptime_minutes": 0,
     "disk": {
       "total_gb": 228,
-      "used_gb": 12,
-      "available_gb": 129,
-      "usage_percent": 9
+      "used_gb": 78,
+      "available_gb": 150,
+      "usage_percent": 38
     },
     "memory": {
       "pages_free": 21823,
@@ -54,19 +54,18 @@
     }
   },
   "memory": {
-    "total_entries": 340,
-    "daily_files": 54,
-    "memory_lines_curated": 188,
+    "total_entries": 51,
+    "daily_files": 51,
+    "memory_lines_curated": 193,
     "lancedb_pro": {
-      "enabled": true,
-      "vector_files": 740,
-      "smart_extraction": true,
-      "auto_recall": "enabled"
+      "enabled": false,
+      "vector_files": 0,
+      "smart_extraction": false,
+      "auto_recall": "disabled"
     }
   },
   "plugins": {
     "enabled": [
-      "memory-lancedb-pro",
       "telegram",
       "feishu",
       "minimax",
@@ -77,32 +76,30 @@
       "brave",
       "codex"
     ],
-    "memory_slot": "memory-lancedb-pro",
-    "count": 10
+    "memory_slot": "built-in",
+    "count": 9
   },
   "models": {
     "primary": "openrouter/auto",
     "fallback": "minimax/MiniMax-M2.7-highspeed",
-    "available_count": 10,
+    "available_count": 9,
     "note": "multi-provider hybrid routing"
   },
   "agents": {
-    "total": 3,
+    "total": 1,
     "list": [
-      "main",
-      "queen-secretary",
-      "jazmin"
+      "main"
     ]
   },
   "health": {
     "gateway": "healthy",
     "cron": "degraded",
-    "memory": "optimal",
+    "memory": "nominal",
     "disk": "good",
     "overall": "nominal"
   },
   "last_update": {
-    "timestamp": "2026-06-22T03:02:00+08:00",
+    "timestamp": "2026-06-23T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
