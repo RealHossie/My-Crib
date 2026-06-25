@@ -1,56 +1,56 @@
 {
-  "generated_at": "2026-06-24T03:00:00+08:00",
-  "timestamp": 1782241200,
+  "generated_at": "2026-06-26T03:00:00+08:00",
+  "timestamp": 1782413220,
   "host": {
-    "name": "Mac mini",
+    "name": "老北京的Mac mini",
     "chip": "Apple M4",
     "memory": "16GB Unified",
     "storage": "256GB SSD",
-    "os": "macOS 26.5.1 (Darwin 25.5.1 arm64)"
+    "os": "macOS 26.5.0 (Darwin 25.5.0 arm64)"
   },
   "openclaw": {
-    "version": "2026.6.5",
+    "version": "2026.6.9",
     "gateway": {
       "status": "running",
       "pid": 21865,
-      "memory_mb": 678,
+      "memory_mb": 659,
       "port": "loopback:18789",
-      "uptime_hours": 504,
+      "uptime_hours": 576,
       "note": "stable operation"
     }
   },
   "system": {
-    "uptime_days": 21,
+    "uptime_days": 22,
     "uptime_hours": 3,
     "uptime_minutes": 0,
     "disk": {
       "total_gb": 228,
-      "used_gb": 82,
-      "available_gb": 146,
-      "usage_percent": 39
+      "used_gb": 101,
+      "available_gb": 127,
+      "usage_percent": 44
     },
     "memory": {
-      "pages_free": 6596,
-      "pages_active": 410529,
-      "system_free_percent": 2,
-      "note": "system-wide pages, well below threshold"
+      "pages_free": 786665,
+      "pages_active": 408293,
+      "system_free_percent": 21.6,
+      "note": "system-wide pages, healthy"
     }
   },
   "cron": {
     "total_jobs": 1,
     "status_summary": {
       "running": 1,
-      "error": 0,
-      "ok": 1
+      "error": 1,
+      "ok": 0
     },
     "dashboard_update_job": {
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
-      "status": "ok",
-      "last_run_status": "ok",
-      "last_duration_ms": 35847,
-      "consecutive_errors": 0,
-      "note": "regular daily update"
+      "status": "error",
+      "last_run_status": "error",
+      "last_duration_ms": 120000,
+      "consecutive_errors": 1,
+      "note": "timeout on cron execution, needs investigation"
     }
   },
   "memory": {
@@ -58,10 +58,11 @@
     "daily_files": 51,
     "memory_lines_curated": 193,
     "lancedb_pro": {
-      "enabled": false,
-      "vector_files": 0,
-      "smart_extraction": false,
-      "auto_recall": "disabled"
+      "enabled": true,
+      "vector_db_size_mb": 6.2,
+      "vector_files": 521,
+      "smart_extraction": true,
+      "auto_recall": "enabled"
     }
   },
   "plugins": {
@@ -76,7 +77,7 @@
       "brave",
       "codex"
     ],
-    "memory_slot": "built-in",
+    "memory_slot": "memory-lancedb-pro",
     "count": 9
   },
   "models": {
@@ -93,13 +94,13 @@
   },
   "health": {
     "gateway": "healthy",
-    "cron": "healthy",
+    "cron": "degraded",
     "memory": "nominal",
     "disk": "good",
-    "overall": "healthy"
+    "overall": "healthy_with_alerts"
   },
   "last_update": {
-    "timestamp": "2026-06-24T03:00:00+08:00",
+    "timestamp": "2026-06-26T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
