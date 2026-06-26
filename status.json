@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-26T03:00:00+08:00",
-  "timestamp": 1782413220,
+  "generated_at": "2026-06-27T03:00:00+08:00",
+  "timestamp": 1782499200,
   "host": {
     "name": "老北京的Mac mini",
     "chip": "Apple M4",
@@ -20,19 +20,19 @@
     }
   },
   "system": {
-    "uptime_days": 22,
+    "uptime_days": 23,
     "uptime_hours": 3,
     "uptime_minutes": 0,
     "disk": {
       "total_gb": 228,
-      "used_gb": 101,
-      "available_gb": 127,
-      "usage_percent": 44
+      "used_gb": 12,
+      "available_gb": 124,
+      "usage_percent": 9
     },
     "memory": {
-      "pages_free": 786665,
-      "pages_active": 408293,
-      "system_free_percent": 21.6,
+      "pages_free": 15499,
+      "pages_active": 389928,
+      "system_free_percent": 11.8,
       "note": "system-wide pages, healthy"
     }
   },
@@ -50,7 +50,7 @@
       "last_run_status": "error",
       "last_duration_ms": 120000,
       "consecutive_errors": 1,
-      "note": "timeout on cron execution, needs investigation"
+      "note": "timeout on cron execution (cron job wrapping status report run)"
     }
   },
   "memory": {
@@ -100,7 +100,7 @@
     "overall": "healthy_with_alerts"
   },
   "last_update": {
-    "timestamp": "2026-06-26T03:00:00+08:00",
+    "timestamp": "2026-06-27T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
