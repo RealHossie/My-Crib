@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T03:00:00+08:00",
-  "timestamp": 1782499200,
+  "generated_at": "2026-06-28T03:00:00+08:00",
+  "timestamp": 1782585600,
   "host": {
     "name": "老北京的Mac mini",
     "chip": "Apple M4",
@@ -26,12 +26,12 @@
     "disk": {
       "total_gb": 228,
       "used_gb": 12,
-      "available_gb": 124,
+      "available_gb": 123,
       "usage_percent": 9
     },
     "memory": {
-      "pages_free": 15499,
-      "pages_active": 389928,
+      "pages_free": 14547,
+      "pages_active": 364051,
       "system_free_percent": 11.8,
       "note": "system-wide pages, healthy"
     }
@@ -40,17 +40,16 @@
     "total_jobs": 1,
     "status_summary": {
       "running": 1,
-      "error": 1,
-      "ok": 0
+      "error": 0,
+      "ok": 1
     },
     "dashboard_update_job": {
       "name": "dashboard-update",
       "schedule": "cron 0 3 * * * @ Asia/Shanghai",
-      "status": "error",
-      "last_run_status": "error",
-      "last_duration_ms": 120000,
-      "consecutive_errors": 1,
-      "note": "timeout on cron execution (cron job wrapping status report run)"
+      "status": "ok",
+      "last_run_status": "ok",
+      "enabled": true,
+      "next_run_at": "2026-06-29T03:00:00+08:00"
     }
   },
   "memory": {
@@ -94,13 +93,13 @@
   },
   "health": {
     "gateway": "healthy",
-    "cron": "degraded",
+    "cron": "healthy",
     "memory": "nominal",
     "disk": "good",
-    "overall": "healthy_with_alerts"
+    "overall": "healthy"
   },
   "last_update": {
-    "timestamp": "2026-06-27T03:00:00+08:00",
+    "timestamp": "2026-06-28T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
