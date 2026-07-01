@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-01T03:00:23+08:00",
-  "timestamp": 1782846023,
+  "generated_at": "2026-07-02T03:00:00+08:00",
+  "timestamp": 1782932400,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -13,26 +13,26 @@
     "gateway": {
       "status": "running",
       "pid": 21865,
-      "memory_mb": 651,
+      "memory_mb": 690,
       "port": "loopback:18789",
-      "uptime_hours": 624,
+      "uptime_hours": 648,
       "note": "stable operation"
     }
   },
   "system": {
-    "uptime_days": 26,
+    "uptime_days": 27,
     "uptime_hours": 3,
     "uptime_minutes": 0,
     "disk": {
       "total_gb": 228,
       "used_gb": 12,
-      "available_gb": 122,
+      "available_gb": 123,
       "usage_percent": 9
     },
     "memory": {
-      "pages_free": 9056,
-      "pages_active": 378989,
-      "system_free_percent": 7.1,
+      "pages_free": 9200,
+      "pages_active": 378400,
+      "system_free_percent": 7.4,
       "note": "system-wide pages, nominal"
     }
   },
@@ -49,17 +49,17 @@
       "status": "ok",
       "last_run_status": "ok",
       "enabled": true,
-      "next_run_at": "2026-07-02T03:00:00+08:00"
+      "next_run_at": "2026-07-03T03:00:00+08:00"
     }
   },
   "memory": {
-    "total_entries": 51,
-    "daily_files": 51,
+    "total_entries": 52,
+    "daily_files": 52,
     "memory_lines_curated": 194,
     "lancedb_pro": {
       "enabled": true,
-      "vector_db_size_mb": 6.2,
-      "vector_files": 521,
+      "vector_db_size_mb": 6.4,
+      "vector_files": 528,
       "smart_extraction": true,
       "auto_recall": "enabled"
     }
@@ -99,7 +99,7 @@
     "overall": "healthy"
   },
   "last_update": {
-    "timestamp": "2026-07-01T03:00:23+08:00",
+    "timestamp": "2026-07-02T03:00:00+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
