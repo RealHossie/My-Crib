@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-03T03:00:00+08:00",
-  "timestamp": 1783018800,
+  "generated_at": "2026-07-04T03:00:25+08:00",
+  "timestamp": 1783105225,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -15,12 +15,12 @@
       "pid": 21865,
       "memory_mb": 690,
       "port": "loopback:18789",
-      "uptime_hours": 672,
+      "uptime_hours": 696,
       "note": "stable operation"
     }
   },
   "system": {
-    "uptime_days": 28,
+    "uptime_days": 29,
     "uptime_hours": 3,
     "uptime_minutes": 0,
     "disk": {
@@ -30,36 +30,42 @@
       "usage_percent": 9
     },
     "memory": {
-      "pages_free": 15057,
-      "pages_active": 378400,
-      "system_free_percent": 12.1,
-      "note": "system-wide pages, nominal"
+      "pages_free": 51873,
+      "pages_active": 378346,
+      "system_free_percent": 12.8,
+      "note": "system-wide pages, healthy"
     }
   },
   "cron": {
-    "total_jobs": 1,
+    "total_jobs": 2,
     "status_summary": {
       "running": 1,
       "error": 0,
-      "ok": 1
+      "ok": 2
     },
-    "dashboard_update_job": {
-      "name": "dashboard-update",
-      "schedule": "cron 0 3 * * * @ Asia/Shanghai",
-      "status": "ok",
-      "last_run_status": "ok",
-      "enabled": true,
-      "next_run_at": "2026-07-04T03:00:00+08:00"
-    }
+    "jobs": [
+      {
+        "name": "dashboard-update",
+        "schedule": "cron 0 3 * * * @ Asia/Shanghai",
+        "status": "running",
+        "enabled": true
+      },
+      {
+        "name": "system-health-patrol",
+        "schedule": "cron 0 4 * * * @ Asia/Shanghai",
+        "status": "ok",
+        "enabled": true
+      }
+    ]
   },
   "memory": {
-    "total_entries": 52,
-    "daily_files": 52,
+    "total_entries": 51,
+    "daily_files": 51,
     "memory_lines_curated": 194,
     "lancedb_pro": {
       "enabled": true,
       "vector_db_size_mb": 6.4,
-      "vector_files": 528,
+      "vector_files": 0,
       "smart_extraction": true,
       "auto_recall": "enabled"
     }
@@ -94,12 +100,12 @@
   "health": {
     "gateway": "healthy",
     "cron": "healthy",
-    "memory": "nominal",
+    "memory": "healthy",
     "disk": "good",
     "overall": "healthy"
   },
   "last_update": {
-    "timestamp": "2026-07-03T03:00:00+08:00",
+    "timestamp": "2026-07-04T03:00:25+08:00",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
