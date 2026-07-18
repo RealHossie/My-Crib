@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-18T03:00:00+0800",
-  "timestamp": 1784314800,
+  "generated_at": "2026-07-19T03:00:00+0800",
+  "timestamp": 1784401200,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -15,26 +15,26 @@
       "pid": "system-managed",
       "memory_mb": 1248,
       "port": "loopback:18789",
-      "uptime_hours": 1007,
-      "note": "42 days stable operation"
+      "uptime_hours": 1031,
+      "note": "43 days stable operation"
     }
   },
   "system": {
-    "uptime_days": 45,
-    "uptime_hours": 3,
-    "uptime_minutes": 0,
+    "uptime_days": 46,
+    "uptime_hours": 6,
+    "uptime_minutes": 26,
     "disk": {
       "total_gb": 228,
-      "used_gb": 25,
+      "used_gb": 13,
       "available_gb": 107,
       "usage_percent": 11
     },
     "memory": {
-      "pages_free": 21325,
+      "pages_free": 27731,
       "pages_active": 362665,
       "pages_inactive": 371113,
-      "system_free_percent": 2.1,
-      "note": "active compression healthy, stable pressure"
+      "system_free_percent": 2.8,
+      "note": "active compression healthy, nominal pressure"
     }
   },
   "cron": {
@@ -50,8 +50,8 @@
         "schedule": "cron 0 3 * * * @ Asia/Shanghai",
         "status": "ok",
         "enabled": true,
-        "last_run": "2026-07-18T03:00:00+0800",
-        "next_run": "2026-07-19T03:00:00+0800"
+        "last_run": "2026-07-19T03:00:00+0800",
+        "next_run": "2026-07-20T03:00:00+0800"
       }
     ]
   },
@@ -102,7 +102,7 @@
     "overall": "healthy"
   },
   "last_update": {
-    "timestamp": "2026-07-18T03:00:00+0800",
+    "timestamp": "2026-07-19T03:00:00+0800",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
