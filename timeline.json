@@ -96,7 +96,7 @@
   },
   {
     "date": "2026-07-19",
-    "event": "Daily status sync: gateway uptime 1031h (43 days), 51 memory entries, memory cushion improved (2.8% free), disk excellent (11% used), cron dashboard-update executing on schedule",
+    "event": "Daily status sync: gateway uptime 1031h (43 days), 51 memory entries, memory pressure improved (2.8% free), disk excellent (11% used), cron dashboard-update executing on schedule",
     "type": "ops"
   },
   {
@@ -107,6 +107,11 @@
   {
     "date": "2026-07-21",
     "event": "Daily status sync: gateway uptime 1079h (45 days), 51 memory entries, memory cushion stable (2.8% free), disk excellent (11% used), cron dashboard-update executing nominal",
+    "type": "ops"
+  },
+  {
+    "date": "2026-07-22",
+    "event": "Daily status sync: gateway uptime 1103h (46 days), 51 memory entries, memory cushion stable (1.9% free), disk good (46% used), cron dashboard-update executing nominal",
     "type": "ops"
   }
 ]
