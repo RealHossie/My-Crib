@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-31T03:00:00+0800",
-  "timestamp": 1785438000,
+  "generated_at": "2026-08-01T03:00:00+0800",
+  "timestamp": 1785524400,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -15,26 +15,26 @@
       "pid": 34986,
       "memory_mb": 1284,
       "port": "loopback:18789",
-      "uptime_hours": 1296,
-      "note": "54 days stable operation, 4 processes active"
+      "uptime_hours": 1320,
+      "note": "55 days stable operation, 4 processes active"
     }
   },
   "system": {
-    "uptime_days": 57,
-    "uptime_hours": 8,
+    "uptime_days": 58,
+    "uptime_hours": 9,
     "uptime_minutes": 27,
     "disk": {
       "total_gb": 228,
       "used_gb": 12,
-      "available_gb": 116,
+      "available_gb": 112,
       "usage_percent": 10
     },
     "memory": {
-      "pages_free": 36160,
-      "pages_active": 389420,
-      "pages_inactive": 227920,
-      "system_free_percent": 2.4,
-      "note": "active compression healthy, nominal pressure"
+      "pages_free": 21704,
+      "pages_active": 389585,
+      "pages_inactive": 385358,
+      "system_free_percent": 78,
+      "note": "memory pressure excellent, compression healthy"
     }
   },
   "cron": {
@@ -50,15 +50,15 @@
         "schedule": "cron 0 3 * * * @ Asia/Shanghai",
         "status": "ok",
         "enabled": true,
-        "last_run": "2026-07-31T03:00:00+0800",
-        "next_run": "2026-08-01T03:00:00+0800"
+        "last_run": "2026-08-01T03:00:00+0800",
+        "next_run": "2026-08-02T03:00:00+0800"
       }
     ]
   },
   "memory": {
     "total_entries": 55,
     "daily_files": 55,
-    "memory_lines_curated": 194,
+    "memory_lines_curated": 0,
     "lancedb_pro": {
       "enabled": true,
       "vector_db_size_mb": 8.6,
@@ -102,7 +102,7 @@
     "overall": "healthy"
   },
   "last_update": {
-    "timestamp": "2026-07-31T03:00:00+0800",
+    "timestamp": "2026-08-01T03:00:00+0800",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
