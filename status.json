@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-12T03:00:00+0800",
-  "timestamp": 1786474800,
+  "generated_at": "2026-08-13T03:00:00+0800",
+  "timestamp": 1786561200,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -14,14 +14,14 @@
     "gateway": {
       "status": "running",
       "memory_mb": 476,
-      "uptime_hours": 76,
+      "uptime_hours": 100,
       "note": "gateway process restarted 2026-08-08, running clean since; 3 agents configured"
     }
   },
   "system": {
-    "uptime_days": 3,
-    "uptime_hours": 5,
-    "uptime_minutes": 42,
+    "uptime_days": 4,
+    "uptime_hours": 0,
+    "uptime_minutes": 8,
     "load_average": [3.72, 3.83, 3.69],
     "disk": {
       "total_gb": 228,
@@ -48,8 +48,8 @@
         "schedule": "0 3 * * * @ Asia/Shanghai",
         "status": "ok",
         "enabled": true,
-        "last_run": "2026-08-11T03:00:00+0800",
-        "next_run": "2026-08-13T03:00:00+0800"
+        "last_run": "2026-08-13T03:00:00+0800",
+        "next_run": "2026-08-14T03:00:00+0800"
       }
     ]
   },
@@ -99,7 +99,7 @@
     "overall": "healthy"
   },
   "last_update": {
-    "timestamp": "2026-08-12T03:00:00+0800",
+    "timestamp": "2026-08-13T03:00:00+0800",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
