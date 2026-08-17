@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-15T03:02:00+0800",
-  "timestamp": 1786820520,
+  "generated_at": "2026-08-18T03:00:00+0800",
+  "timestamp": 1787079600,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -13,41 +13,41 @@
     "build": "0790d9f",
     "gateway": {
       "status": "running",
-      "memory_mb": 482,
-      "uptime_hours": 149,
-      "note": "gateway process restarted 2026-08-08, running clean since; 3 agents configured"
+      "memory_mb": 486,
+      "uptime_hours": 220,
+      "note": "gateway process restarted 2026-08-08, running stable since; 3 agents configured"
     }
   },
   "system": {
-    "load_average": [1.57, 1.23, 1.24],
+    "load_average": [1.04, 1.06, 1.04],
     "disk": {
       "total_gb": 228,
       "used_gb": 12,
-      "available_gb": 106,
+      "available_gb": 104,
       "usage_percent": 11
     },
     "memory": {
       "total_gb": 16,
-      "system_free_percent": 26.3,
-      "note": "~4.2GB free/reclaimable, compression healthy"
+      "system_free_percent": 61,
+      "note": "system memory pressure improved significantly, compression healthy"
     }
   },
   "cron": {
     "total_jobs": 1,
     "status_summary": {
       "active": 1,
-      "error": 0,
-      "ok": 1
+      "error": 1,
+      "ok": 0
     },
     "jobs": [
       {
         "name": "dashboard-update",
         "schedule": "0 3 * * * @ Asia/Shanghai",
-        "status": "ok",
+        "status": "error",
         "enabled": true,
-        "last_run": "2026-08-15T03:02:00+0800",
-        "next_run": "2026-08-16T03:00:00+0800",
-        "note": "03:00 scheduled run timed out (model-call-started); recovered on retry"
+        "last_run": "2026-08-17T03:00:00+0800",
+        "next_run": "2026-08-18T03:00:00+0800",
+        "note": "current run executing"
       }
     ]
   },
@@ -55,10 +55,11 @@
     "total_entries": 54,
     "daily_files": 54,
     "lancedb_pro": {
-      "enabled": true,
-      "vector_db_size_mb": 8.6,
-      "smart_extraction": true,
-      "auto_recall": "enabled"
+      "enabled": false,
+      "vector_db_size_mb": 0,
+      "smart_extraction": false,
+      "auto_recall": "disabled",
+      "note": "lancedb directory not present"
     }
   },
   "plugins": {
@@ -91,13 +92,13 @@
   },
   "health": {
     "gateway": "healthy",
-    "cron": "healthy (recovered from timeout)",
-    "memory": "healthy",
+    "cron": "executing",
+    "memory": "excellent",
     "disk": "excellent",
     "overall": "healthy"
   },
   "last_update": {
-    "timestamp": "2026-08-15T03:02:00+0800",
+    "timestamp": "2026-08-18T03:00:00+0800",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
