@@ -268,5 +268,10 @@
     "date": "2026-08-21",
     "event": "Cron dashboard-update: 3rd consecutive timeout at 03:00 (model-call-started, MiniMax-M2.7-highspeed via openrouter/auto routing); timeoutSeconds raised 180->400 to prevent recurrence. Daily status sync: gateway uptime 292h (restarted 2026-08-08), 507MB RSS, 54 memory entries, system memory 49% free (down from 61%), disk 15% used (96GB free), 3 agents configured, openclaw v2026.7.1-2 (0790d9f)",
     "type": "ops"
+  },
+  {
+    "date": "2026-08-22",
+    "event": "Cron dashboard-update recovered: first successful run since timeoutSeconds fix (180->400 on 08-21), ending a streak of 3 consecutive timeouts. Daily status sync: gateway uptime 316h (restarted 2026-08-08), 525MB RSS, 54 memory entries, system memory 37% free (continued decline from 49%, no swap pressure observed), disk 15% used (86GB free), 3 agents configured, openclaw v2026.7.1-2 (0790d9f)",
+    "type": "ops"
   }
 ]

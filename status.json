@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T03:00:00+0800",
+  "generated_at": "2026-08-22T03:00:00+0800",
   "timestamp": 1787338800,
   "host": {
     "name": "Mac mini",
@@ -13,41 +13,41 @@
     "build": "0790d9f",
     "gateway": {
       "status": "running",
-      "memory_mb": 507,
-      "uptime_hours": 292,
+      "memory_mb": 525,
+      "uptime_hours": 316,
       "note": "gateway process running stable (restarted 2026-08-08); 3 agents configured"
     }
   },
   "system": {
-    "load_average": [1.07, 1.13, 1.11],
+    "load_average": [1.10, 1.15, 1.12],
     "disk": {
-      "total_gb": 245,
-      "used_gb": 16,
-      "available_gb": 96,
+      "total_gb": 228,
+      "used_gb": 15,
+      "available_gb": 86,
       "usage_percent": 15
     },
     "memory": {
       "total_gb": 16,
-      "system_free_percent": 49,
-      "note": "system memory free dropped to 49% (from 61% three days prior); gateway RSS 507MB; compression active"
+      "system_free_percent": 37,
+      "note": "system memory free continued to decline (61% -> 49% -> 37% over past week); no swap pressure yet, monitoring recommended"
     }
   },
   "cron": {
     "total_jobs": 1,
     "status_summary": {
       "active": 1,
-      "error": 1,
-      "ok": 0
+      "error": 0,
+      "ok": 1
     },
     "jobs": [
       {
         "name": "dashboard-update",
         "schedule": "0 3 * * * @ Asia/Shanghai",
-        "status": "error",
+        "status": "ok",
         "enabled": true,
-        "last_run": "2026-08-20T03:00:00+0800",
-        "next_run": "2026-08-22T03:00:00+0800",
-        "note": "8 consecutive timeouts (model-call-started phase); this run is recovery attempt"
+        "last_run": "2026-08-22T03:00:00+0800",
+        "next_run": "2026-08-23T03:00:00+0800",
+        "note": "9 consecutive timeouts (2026-08-15 to 08-21, model-call-started phase) resolved after timeoutSeconds raised 180->400 on 08-21; this run completed successfully within new window"
       }
     ]
   },
@@ -56,10 +56,7 @@
     "daily_files": 54,
     "lancedb_pro": {
       "enabled": false,
-      "vector_db_size_mb": 8.6,
-      "smart_extraction": false,
-      "auto_recall": "disabled",
-      "note": "lancedb-pro directory present (8.6MB) but not in plugin allow-list; memory-core active as memory slot"
+      "note": "lancedb-pro directory removed 2026-08-18; memory-core active as primary memory slot"
     }
   },
   "plugins": {
@@ -95,13 +92,13 @@
   },
   "health": {
     "gateway": "healthy",
-    "cron": "degraded",
+    "cron": "healthy",
     "memory": "acceptable",
     "disk": "excellent",
-    "overall": "acceptable"
+    "overall": "healthy"
   },
   "last_update": {
-    "timestamp": "2026-08-21T03:00:00+0800",
+    "timestamp": "2026-08-22T03:00:00+0800",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
