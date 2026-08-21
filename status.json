@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-18T03:00:00+0800",
-  "timestamp": 1787079600,
+  "generated_at": "2026-08-21T03:00:00+0800",
+  "timestamp": 1787338800,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -13,23 +13,23 @@
     "build": "0790d9f",
     "gateway": {
       "status": "running",
-      "memory_mb": 486,
-      "uptime_hours": 220,
-      "note": "gateway process restarted 2026-08-08, running stable since; 3 agents configured"
+      "memory_mb": 507,
+      "uptime_hours": 292,
+      "note": "gateway process running stable (restarted 2026-08-08); 3 agents configured"
     }
   },
   "system": {
-    "load_average": [1.04, 1.06, 1.04],
+    "load_average": [1.07, 1.13, 1.11],
     "disk": {
-      "total_gb": 228,
-      "used_gb": 12,
-      "available_gb": 104,
-      "usage_percent": 11
+      "total_gb": 245,
+      "used_gb": 16,
+      "available_gb": 96,
+      "usage_percent": 15
     },
     "memory": {
       "total_gb": 16,
-      "system_free_percent": 61,
-      "note": "system memory pressure improved significantly, compression healthy"
+      "system_free_percent": 49,
+      "note": "system memory free dropped to 49% (from 61% three days prior); gateway RSS 507MB; compression active"
     }
   },
   "cron": {
@@ -45,9 +45,9 @@
         "schedule": "0 3 * * * @ Asia/Shanghai",
         "status": "error",
         "enabled": true,
-        "last_run": "2026-08-17T03:00:00+0800",
-        "next_run": "2026-08-18T03:00:00+0800",
-        "note": "current run executing"
+        "last_run": "2026-08-20T03:00:00+0800",
+        "next_run": "2026-08-22T03:00:00+0800",
+        "note": "8 consecutive timeouts (model-call-started phase); this run is recovery attempt"
       }
     ]
   },
@@ -56,14 +56,15 @@
     "daily_files": 54,
     "lancedb_pro": {
       "enabled": false,
-      "vector_db_size_mb": 0,
+      "vector_db_size_mb": 8.6,
       "smart_extraction": false,
       "auto_recall": "disabled",
-      "note": "lancedb directory not present"
+      "note": "lancedb-pro directory present (8.6MB) but not in plugin allow-list; memory-core active as memory slot"
     }
   },
   "plugins": {
     "enabled": [
+      "memory-core",
       "telegram",
       "feishu",
       "minimax",
@@ -72,9 +73,11 @@
       "openai",
       "openrouter",
       "brave",
-      "codex"
+      "codex",
+      "perplexity",
+      "llama-cpp"
     ],
-    "count": 9
+    "count": 12
   },
   "models": {
     "primary": "openrouter/auto",
@@ -92,13 +95,13 @@
   },
   "health": {
     "gateway": "healthy",
-    "cron": "executing",
-    "memory": "excellent",
+    "cron": "degraded",
+    "memory": "acceptable",
     "disk": "excellent",
-    "overall": "healthy"
+    "overall": "acceptable"
   },
   "last_update": {
-    "timestamp": "2026-08-18T03:00:00+0800",
+    "timestamp": "2026-08-21T03:00:00+0800",
     "source": "cron: dashboard-update",
     "sanitized": true
   }

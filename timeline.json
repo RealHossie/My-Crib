@@ -253,5 +253,20 @@
     "date": "2026-08-18",
     "event": "System memory significantly improved: 61% free (up from 26.3%), compression healthy; lancedb directory removed; gateway uptime 220h stable",
     "type": "ops"
+  },
+  {
+    "date": "2026-08-19",
+    "event": "Cron dashboard-update 03:00 scheduled run timed out at model-call phase; no dashboard update produced (run failed, no retry succeeded)",
+    "type": "ops"
+  },
+  {
+    "date": "2026-08-20",
+    "event": "Cron dashboard-update 03:00 scheduled run timed out at model-call phase again (2nd consecutive miss); no dashboard update produced",
+    "type": "ops"
+  },
+  {
+    "date": "2026-08-21",
+    "event": "Cron dashboard-update: 3rd consecutive timeout at 03:00 (model-call-started, MiniMax-M2.7-highspeed via openrouter/auto routing); timeoutSeconds raised 180->400 to prevent recurrence. Daily status sync: gateway uptime 292h (restarted 2026-08-08), 507MB RSS, 54 memory entries, system memory 49% free (down from 61%), disk 15% used (96GB free), 3 agents configured, openclaw v2026.7.1-2 (0790d9f)",
+    "type": "ops"
   }
 ]
