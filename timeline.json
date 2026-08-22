@@ -273,5 +273,20 @@
     "date": "2026-08-22",
     "event": "Cron dashboard-update recovered: first successful run since timeoutSeconds fix (180->400 on 08-21), ending a streak of 3 consecutive timeouts. Daily status sync: gateway uptime 316h (restarted 2026-08-08), 525MB RSS, 54 memory entries, system memory 37% free (continued decline from 49%, no swap pressure observed), disk 15% used (86GB free), 3 agents configured, openclaw v2026.7.1-2 (0790d9f)",
     "type": "ops"
+  },
+  {
+    "date": "2026-08-23",
+    "event": "Host rebooted 00:40 after macOS update 26.6.1 -> 26.6.2 (build 25G76 -> 25G83); gateway LaunchAgent auto-restarted and resumed loopback service, cron schedule survived intact",
+    "type": "ops"
+  },
+  {
+    "date": "2026-08-23",
+    "event": "Daily status sync: gateway uptime 2h (post-reboot), 1114MB RSS (elevated vs ~525MB prior baseline, monitoring), 55 memory entries, system memory 38% free, no swap in use, disk 10% used (110GB free), 3 agents configured, openclaw v2026.7.1-2 (0790d9f), cron dashboard-update ok (2nd success since timeout fix)",
+    "type": "ops"
+  },
+  {
+    "date": "2026-08-23",
+    "event": "Gateway service advisory surfaced: Node runs from a version manager with non-minimal PATH, upgrade-fragile; 'openclaw doctor --repair' recommended but deferred pending explicit approval",
+    "type": "ops"
   }
 ]
