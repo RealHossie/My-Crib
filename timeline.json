@@ -288,5 +288,20 @@
     "date": "2026-08-23",
     "event": "Gateway service advisory surfaced: Node runs from a version manager with non-minimal PATH, upgrade-fragile; 'openclaw doctor --repair' recommended but deferred pending explicit approval",
     "type": "ops"
+  },
+  {
+    "date": "2026-08-24",
+    "event": "Gateway RSS anomaly closed: yesterday's 1114MB reading dropped back to 506MB at 26h uptime, matching the ~507-525MB historical baseline - confirmed post-reboot transient allocation, not a leak; no intervention needed",
+    "type": "ops"
+  },
+  {
+    "date": "2026-08-24",
+    "event": "Daily status sync: gateway uptime 26h, 506MB RSS, loopback bind on port 18789, 55 memory entries, system memory 36% free (5.8GB available, no swap), 12 plugins enabled, 3 agents configured, openclaw v2026.7.1-2 (0790d9f), cron dashboard-update ok (3rd consecutive success since timeout fix)",
+    "type": "ops"
+  },
+  {
+    "date": "2026-08-24",
+    "event": "Disk reporting standardized: prior entries mixed the read-only system snapshot (12GB/10%) with the writable data volume; dashboard now reports the data volume consistently at 97GB used / 47% with 110GB free",
+    "type": "ops"
   }
 ]
