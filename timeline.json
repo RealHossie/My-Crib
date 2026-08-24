@@ -303,5 +303,10 @@
     "date": "2026-08-24",
     "event": "Disk reporting standardized: prior entries mixed the read-only system snapshot (12GB/10%) with the writable data volume; dashboard now reports the data volume consistently at 97GB used / 47% with 110GB free",
     "type": "ops"
+  },
+  {
+    "date": "2026-08-25",
+    "event": "Daily status sync: gateway uptime 50h, 525MB RSS (stable, matches historical baseline for 2nd consecutive day), 55 memory entries, system memory 35% free (5.6GB available, no swap), disk 47% used on data volume (110GB free), 12 plugins enabled, 3 agents configured, openclaw v2026.7.1-2 (0790d9f), cron dashboard-update ok (4th consecutive success since timeout fix)",
+    "type": "ops"
   }
 ]
