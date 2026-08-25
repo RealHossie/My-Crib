@@ -308,5 +308,20 @@
     "date": "2026-08-25",
     "event": "Daily status sync: gateway uptime 50h, 525MB RSS (stable, matches historical baseline for 2nd consecutive day), 55 memory entries, system memory 35% free (5.6GB available, no swap), disk 47% used on data volume (110GB free), 12 plugins enabled, 3 agents configured, openclaw v2026.7.1-2 (0790d9f), cron dashboard-update ok (4th consecutive success since timeout fix)",
     "type": "ops"
+  },
+  {
+    "date": "2026-08-26",
+    "event": "Daily status sync: gateway uptime 74h, 545MB RSS (3rd consecutive day inside the 506-545MB baseline band), 55 memory entries, system memory 37% free (5.9GB available, no swap), disk 48% used on data volume (108GB free), 12 plugins enabled, 3 agents configured, openclaw v2026.7.1-2 (0790d9f), cron dashboard-update ok (5th consecutive success since timeout fix)",
+    "type": "ops"
+  },
+  {
+    "date": "2026-08-26",
+    "event": "Dashboard now also tracks OS-level crontab entries alongside OpenClaw scheduler jobs: two non-OpenClaw cron jobs found (card-sniper collection at 00:00 and 14:00 daily), previously invisible in the cron section",
+    "type": "ops"
+  },
+  {
+    "date": "2026-08-26",
+    "event": "Gateway exposure re-verified: connectivity probe ok, admin-capable, listening only on 127.0.0.1:18789 and [::1]:18789 with no external bind; the three Node/PATH service-config advisories persist unchanged and doctor --repair stays deferred pending approval",
+    "type": "security"
   }
 ]

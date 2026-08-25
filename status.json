@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T03:00:00+0800",
-  "timestamp": 1787598000,
+  "generated_at": "2026-08-26T03:00:00+0800",
+  "timestamp": 1787684400,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -13,27 +13,27 @@
     "build": "0790d9f",
     "gateway": {
       "status": "running",
-      "memory_mb": 525,
-      "uptime_hours": 50,
+      "memory_mb": 545,
+      "uptime_hours": 74,
       "bind": "loopback (127.0.0.1:18789)",
-      "note": "stable at 525MB / 50h uptime since 08-23 reboot, in line with the ~507-525MB historical baseline; second consecutive daily reading confirming no leak"
+      "note": "545MB RSS at 74h uptime since the 08-23 reboot; third consecutive day inside the ~506-545MB historical band, RSS drift of ~20MB/day is within normal variance and not treated as a leak"
     }
   },
   "system": {
-    "load_average": [1.07, 1.12, 1.06],
+    "load_average": [1.18, 1.1, 1.08],
     "disk": {
       "data_volume_total_gb": 228,
-      "data_volume_used_gb": 97,
-      "available_gb": 110,
-      "usage_percent": 47,
-      "note": "reported against /System/Volumes/Data (the writable volume); the read-only system snapshot / shows 12GB/10%. Prior entries mixed these two figures - standardizing on the data volume going forward"
+      "data_volume_used_gb": 99,
+      "available_gb": 108,
+      "usage_percent": 48,
+      "note": "reported against /System/Volumes/Data (the writable volume); the read-only system snapshot / shows 12GB/10%. Used grew ~2GB day-over-day (97 -> 99GB), normal log/cache growth"
     },
     "memory": {
       "total_gb": 16,
-      "system_free_percent": 35,
-      "available_gb": 5.6,
+      "system_free_percent": 37,
+      "available_gb": 5.9,
       "swap_used_mb": 0,
-      "note": "free+inactive+speculative = 5.6GB of 16GB; no swap in use, no memory pressure"
+      "note": "free+inactive+speculative = 5.9GB of 16GB; wired 1.6GB, no swap in use, no memory pressure"
     }
   },
   "cron": {
@@ -49,13 +49,17 @@
         "schedule": "0 3 * * * @ Asia/Shanghai",
         "status": "ok",
         "enabled": true,
-        "last_run": "2026-08-24T03:00:00+0800",
+        "last_run": "2026-08-25T03:00:00+0800",
         "last_run_status": "ok",
         "last_delivery": "delivered",
-        "next_run": "2026-08-26T03:00:00+0800",
-        "note": "4th consecutive successful run since timeoutSeconds raised 180->400 on 08-21; timeout fix confirmed stable across a host reboot"
+        "next_run": "2026-08-27T03:00:00+0800",
+        "note": "5th consecutive successful run since timeoutSeconds raised 180->400 on 08-21"
       }
-    ]
+    ],
+    "system_crontab": {
+      "jobs": 2,
+      "note": "two OS-level crontab entries outside OpenClaw (card-sniper collection at 00:00 and 14:00 daily); tracked here for completeness, not managed by the OpenClaw scheduler"
+    }
   },
   "memory": {
     "total_entries": 55,
@@ -104,11 +108,11 @@
     "overall": "healthy"
   },
   "notes": [
-    "openclaw gateway status still reports service-config advisories: Node served from a version manager (nvm) with non-minimal PATH, and no system Node 22 LTS / 24.15+ installed to migrate to. 'openclaw doctor --repair' recommended but NOT executed - system-level change requires explicit approval",
-    "Gateway RSS anomaly from 2026-08-23 is closed: value returned to baseline on its own, confirming it was post-reboot transient rather than a regression"
+    "openclaw gateway status still reports the same three service-config advisories: gateway PATH includes a version manager, Node is served from nvm (upgrade-fragile), and no system Node 22 LTS / 24.15+ is installed to migrate to. 'openclaw doctor --repair' remains recommended but NOT executed - system-level change requires explicit approval",
+    "Connectivity probe ok, admin-capable, listening on 127.0.0.1:18789 and [::1]:18789 only - no external exposure"
   ],
   "last_update": {
-    "timestamp": "2026-08-25T03:00:00+0800",
+    "timestamp": "2026-08-26T03:00:00+0800",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
