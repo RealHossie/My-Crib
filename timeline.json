@@ -323,5 +323,15 @@
     "date": "2026-08-26",
     "event": "Gateway exposure re-verified: connectivity probe ok, admin-capable, listening only on 127.0.0.1:18789 and [::1]:18789 with no external bind; the three Node/PATH service-config advisories persist unchanged and doctor --repair stays deferred pending approval",
     "type": "security"
+  },
+  {
+    "date": "2026-08-27",
+    "event": "Daily status sync: gateway uptime 98h, 530MB RSS (4th consecutive day inside the 506-545MB baseline band), 55 memory entries, system memory 34% free (5.4GB available, no swap), disk 48% used on data volume (108GB free), 12 plugins enabled, 3 agents configured, openclaw v2026.7.1-2 (0790d9f), cron dashboard-update ok (6th consecutive success since timeout fix)",
+    "type": "ops"
+  },
+  {
+    "date": "2026-08-27",
+    "event": "Model config corrected on dashboard: fallback model field fixed from 'MiniMax-M7-highspeed' to the actual configured value 'minimax/MiniMax-M2.7-highspeed', and available model count corrected from 9 to 10 to match agents.defaults.models in openclaw.json",
+    "type": "model"
   }
 ]
