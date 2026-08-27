@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-27T03:00:00+0800",
-  "timestamp": 1787770800,
+  "generated_at": "2026-08-28T03:00:00+0800",
+  "timestamp": 1787857200,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -13,27 +13,27 @@
     "build": "0790d9f",
     "gateway": {
       "status": "running",
-      "memory_mb": 530,
-      "uptime_hours": 98,
+      "memory_mb": 326,
+      "uptime_hours": 122,
       "bind": "loopback (127.0.0.1:18789)",
-      "note": "530MB RSS at 98h uptime since the 08-23 reboot; 4th consecutive day inside the ~506-545MB historical band, RSS drift remains within normal variance and not treated as a leak"
+      "note": "326MB RSS at 122h uptime since the 08-23 reboot; a notable drop below the previous 506-545MB baseline band seen 08-24 through 08-27, likely a GC/compaction cycle rather than a leak signal"
     }
   },
   "system": {
-    "load_average": [0.99, 1.06, 1.07],
+    "load_average": [1.65, 1.35, 1.20],
     "disk": {
       "data_volume_total_gb": 228,
-      "data_volume_used_gb": 99,
-      "available_gb": 108,
+      "data_volume_used_gb": 98,
+      "available_gb": 107,
       "usage_percent": 48,
-      "note": "reported against /System/Volumes/Data (the writable volume); unchanged day-over-day (99GB used, 48%), no notable growth"
+      "note": "reported against /System/Volumes/Data (the writable volume); essentially unchanged day-over-day (98GB used, 48%)"
     },
     "memory": {
       "total_gb": 16,
-      "system_free_percent": 34,
-      "available_gb": 5.4,
-      "swap_used_mb": 0,
-      "note": "free+inactive+speculative = 5.4GB of 16GB; wired 1.5GB, no swap in use, slight dip from yesterday's 5.9GB but no memory pressure"
+      "system_free_percent": 28,
+      "available_gb": 4.5,
+      "swap_used_mb": 193,
+      "note": "free+inactive+speculative = 4.5GB of 16GB; wired 2.1GB; swap usage appeared for the first time in tracked history (193MB of 1GB configured swap, up from 0MB every prior day), alongside load average rising to 1.65/1.35/1.20 from 0.99/1.06/1.07 - worth watching but no active memory pressure warning from the OS"
     }
   },
   "cron": {
@@ -49,11 +49,11 @@
         "schedule": "0 3 * * * @ Asia/Shanghai",
         "status": "ok",
         "enabled": true,
-        "last_run": "2026-08-27T03:00:00+0800",
+        "last_run": "2026-08-28T03:00:00+0800",
         "last_run_status": "ok",
         "last_delivery": "delivered",
-        "next_run": "2026-08-28T03:00:00+0800",
-        "note": "6th consecutive successful run since timeoutSeconds raised 180->400 on 08-21"
+        "next_run": "2026-08-29T03:00:00+0800",
+        "note": "7th consecutive successful run since timeoutSeconds raised 180->400 on 08-21"
       }
     ],
     "system_crontab": {
@@ -90,7 +90,7 @@
     "primary": "openrouter/auto",
     "fallback": "minimax/MiniMax-M2.7-highspeed",
     "available_count": 10,
-    "note": "multi-provider hybrid routing; fallback name and available count corrected today to match the actual agent config (previously misreported as MiniMax-M7-highspeed / 9 models)"
+    "note": "multi-provider hybrid routing; unchanged since 08-27 correction"
   },
   "agents": {
     "total": 3,
@@ -112,7 +112,7 @@
     "Connectivity probe ok, admin-capable, listening on 127.0.0.1:18789 and [::1]:18789 only - no external exposure"
   ],
   "last_update": {
-    "timestamp": "2026-08-27T03:00:00+0800",
+    "timestamp": "2026-08-28T03:00:00+0800",
     "source": "cron: dashboard-update",
     "sanitized": true
   }

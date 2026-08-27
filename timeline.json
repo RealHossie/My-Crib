@@ -333,5 +333,15 @@
     "date": "2026-08-27",
     "event": "Model config corrected on dashboard: fallback model field fixed from 'MiniMax-M7-highspeed' to the actual configured value 'minimax/MiniMax-M2.7-highspeed', and available model count corrected from 9 to 10 to match agents.defaults.models in openclaw.json",
     "type": "model"
+  },
+  {
+    "date": "2026-08-28",
+    "event": "Daily status sync: gateway uptime 122h, RSS dropped to 326MB (below the 506-545MB baseline band tracked since 08-24, likely a GC/compaction cycle), 55 memory entries, system memory 28% free (4.5GB available), disk 48% used on data volume (107GB free), 12 plugins enabled, 3 agents configured, openclaw v2026.7.1-2 (0790d9f), cron dashboard-update ok (7th consecutive success since timeout fix)",
+    "type": "ops"
+  },
+  {
+    "date": "2026-08-28",
+    "event": "First observed swap usage since tracking began: 193MB of 1GB configured swap in use (previously 0MB every day), coinciding with load average rising to 1.65/1.35/1.20 from the prior day's 0.99/1.06/1.07; no OS memory-pressure warning present, flagged for continued monitoring rather than as an active issue",
+    "type": "ops"
   }
 ]
