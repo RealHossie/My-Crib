@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-28T03:00:00+0800",
-  "timestamp": 1787857200,
+  "generated_at": "2026-08-29T03:00:00+0800",
+  "timestamp": 1787943600,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -13,27 +13,27 @@
     "build": "0790d9f",
     "gateway": {
       "status": "running",
-      "memory_mb": 326,
-      "uptime_hours": 122,
+      "memory_mb": 436,
+      "uptime_hours": 146,
       "bind": "loopback (127.0.0.1:18789)",
-      "note": "326MB RSS at 122h uptime since the 08-23 reboot; a notable drop below the previous 506-545MB baseline band seen 08-24 through 08-27, likely a GC/compaction cycle rather than a leak signal"
+      "note": "436MB RSS at 146h uptime since the 08-23 reboot; still below the 506-545MB baseline band seen 08-24 through 08-27, continuing the lower-RSS pattern first seen 08-28 (326MB)"
     }
   },
   "system": {
-    "load_average": [1.65, 1.35, 1.20],
+    "load_average": [3.98, 4.55, 4.45],
     "disk": {
       "data_volume_total_gb": 228,
-      "data_volume_used_gb": 98,
-      "available_gb": 107,
+      "data_volume_used_gb": 97,
+      "available_gb": 108,
       "usage_percent": 48,
-      "note": "reported against /System/Volumes/Data (the writable volume); essentially unchanged day-over-day (98GB used, 48%)"
+      "note": "reported against /System/Volumes/Data (the writable volume); essentially unchanged day-over-day (97GB used, 48%)"
     },
     "memory": {
       "total_gb": 16,
-      "system_free_percent": 28,
-      "available_gb": 4.5,
-      "swap_used_mb": 193,
-      "note": "free+inactive+speculative = 4.5GB of 16GB; wired 2.1GB; swap usage appeared for the first time in tracked history (193MB of 1GB configured swap, up from 0MB every prior day), alongside load average rising to 1.65/1.35/1.20 from 0.99/1.06/1.07 - worth watching but no active memory pressure warning from the OS"
+      "system_free_percent": 23.8,
+      "available_gb": 3.81,
+      "swap_used_mb": 81,
+      "note": "free+inactive+speculative = 3.81GB of 16GB; wired 2.3GB; swap usage present but down to 81MB of 1GB configured (from 193MB on 08-28); load average jumped to 3.98/4.55/4.45 (up sharply from 08-28's 1.65/1.35/1.20), yet CPU usage remains modest (11% user / 19% sys / 70% idle) and no OS memory-pressure warning is present - flagged for continued monitoring"
     }
   },
   "cron": {
@@ -49,11 +49,11 @@
         "schedule": "0 3 * * * @ Asia/Shanghai",
         "status": "ok",
         "enabled": true,
-        "last_run": "2026-08-28T03:00:00+0800",
+        "last_run": "2026-08-29T03:00:00+0800",
         "last_run_status": "ok",
         "last_delivery": "delivered",
-        "next_run": "2026-08-29T03:00:00+0800",
-        "note": "7th consecutive successful run since timeoutSeconds raised 180->400 on 08-21"
+        "next_run": "2026-08-30T03:00:00+0800",
+        "note": "8th consecutive successful run since timeoutSeconds raised 180->400 on 08-21"
       }
     ],
     "system_crontab": {
@@ -109,10 +109,11 @@
   },
   "notes": [
     "openclaw gateway status still reports the same three service-config advisories: gateway PATH includes a version manager, Node is served from nvm (upgrade-fragile), and no system Node 22 LTS / 24.15+ is installed to migrate to. 'openclaw doctor --repair' remains recommended but NOT executed - system-level change requires explicit approval",
-    "Connectivity probe ok, admin-capable, listening on 127.0.0.1:18789 and [::1]:18789 only - no external exposure"
+    "Connectivity probe ok, admin-capable, listening on 127.0.0.1:18789 and [::1]:18789 only - no external exposure",
+    "Load average rose sharply overnight (3.98/4.55/4.45, up from 1.65/1.35/1.20 on 08-28) while CPU usage stayed modest (11% user / 19% sys / 70% idle) - likely transient background activity rather than sustained pressure; watching for recurrence"
   ],
   "last_update": {
-    "timestamp": "2026-08-28T03:00:00+0800",
+    "timestamp": "2026-08-29T03:00:00+0800",
     "source": "cron: dashboard-update",
     "sanitized": true
   }

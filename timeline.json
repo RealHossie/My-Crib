@@ -343,5 +343,15 @@
     "date": "2026-08-28",
     "event": "First observed swap usage since tracking began: 193MB of 1GB configured swap in use (previously 0MB every day), coinciding with load average rising to 1.65/1.35/1.20 from the prior day's 0.99/1.06/1.07; no OS memory-pressure warning present, flagged for continued monitoring rather than as an active issue",
     "type": "ops"
+  },
+  {
+    "date": "2026-08-29",
+    "event": "Load average rose sharply overnight to 3.98/4.55/4.45 (up from 08-28s 1.65/1.35/1.20) while CPU usage stayed modest at 11% user / 19% sys / 70% idle; no OS memory-pressure warning; swap usage actually improved to 81MB from 193MB the prior day; flagged for continued monitoring",
+    "type": "ops"
+  },
+  {
+    "date": "2026-08-29",
+    "event": "Daily status sync: gateway uptime 146h, 436MB RSS (below the 506-545MB baseline band, continuing the lower-RSS pattern seen 08-28), 55 memory entries, system memory 23.8% free (3.81GB available), disk 48% used on data volume (108GB free), 12 plugins enabled, 3 agents configured, openclaw v2026.7.1-2 (0790d9f), cron dashboard-update ok (8th consecutive success since timeout fix)",
+    "type": "ops"
   }
 ]
