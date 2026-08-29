@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-29T03:00:00+0800",
-  "timestamp": 1787943600,
+  "generated_at": "2026-08-30T03:00:00+0800",
+  "timestamp": 1788030000,
   "host": {
     "name": "Mac mini",
     "chip": "Apple M4",
@@ -13,27 +13,27 @@
     "build": "0790d9f",
     "gateway": {
       "status": "running",
-      "memory_mb": 436,
-      "uptime_hours": 146,
+      "memory_mb": 514,
+      "uptime_hours": 170,
       "bind": "loopback (127.0.0.1:18789)",
-      "note": "436MB RSS at 146h uptime since the 08-23 reboot; still below the 506-545MB baseline band seen 08-24 through 08-27, continuing the lower-RSS pattern first seen 08-28 (326MB)"
+      "note": "514MB RSS at 170h uptime since the 08-23 reboot; back within the 506-545MB baseline band after two lower-RSS days (08-28: 326MB, 08-29: 436MB), consistent with periodic GC/compaction cycles"
     }
   },
   "system": {
-    "load_average": [3.98, 4.55, 4.45],
+    "load_average": [1.24, 1.13, 1.07],
     "disk": {
       "data_volume_total_gb": 228,
       "data_volume_used_gb": 97,
-      "available_gb": 108,
+      "available_gb": 107,
       "usage_percent": 48,
       "note": "reported against /System/Volumes/Data (the writable volume); essentially unchanged day-over-day (97GB used, 48%)"
     },
     "memory": {
       "total_gb": 16,
-      "system_free_percent": 23.8,
-      "available_gb": 3.81,
-      "swap_used_mb": 81,
-      "note": "free+inactive+speculative = 3.81GB of 16GB; wired 2.3GB; swap usage present but down to 81MB of 1GB configured (from 193MB on 08-28); load average jumped to 3.98/4.55/4.45 (up sharply from 08-28's 1.65/1.35/1.20), yet CPU usage remains modest (11% user / 19% sys / 70% idle) and no OS memory-pressure warning is present - flagged for continued monitoring"
+      "system_free_percent": 33.3,
+      "available_gb": 5.33,
+      "swap_used_mb": 746,
+      "note": "free+inactive+speculative = 5.33GB of 16GB; wired 1.74GB; swap usage jumped to 746MB (of a dynamic 2048MB macOS-managed swap file) from 81MB the prior day - the largest swap usage observed since tracking began; however load average has normalized to 1.24/1.13/1.07 (down sharply from 08-29's overnight spike of 3.98/4.55/4.45) and CPU usage is modest (8.2% user / 13.2% sys / 78.6% idle) with no OS memory-pressure warning; flagged for continued monitoring"
     }
   },
   "cron": {
@@ -49,11 +49,11 @@
         "schedule": "0 3 * * * @ Asia/Shanghai",
         "status": "ok",
         "enabled": true,
-        "last_run": "2026-08-29T03:00:00+0800",
+        "last_run": "2026-08-30T03:00:00+0800",
         "last_run_status": "ok",
         "last_delivery": "delivered",
-        "next_run": "2026-08-30T03:00:00+0800",
-        "note": "8th consecutive successful run since timeoutSeconds raised 180->400 on 08-21"
+        "next_run": "2026-08-31T03:00:00+0800",
+        "note": "9th consecutive successful run since timeoutSeconds raised 180->400 on 08-21"
       }
     ],
     "system_crontab": {
@@ -110,10 +110,10 @@
   "notes": [
     "openclaw gateway status still reports the same three service-config advisories: gateway PATH includes a version manager, Node is served from nvm (upgrade-fragile), and no system Node 22 LTS / 24.15+ is installed to migrate to. 'openclaw doctor --repair' remains recommended but NOT executed - system-level change requires explicit approval",
     "Connectivity probe ok, admin-capable, listening on 127.0.0.1:18789 and [::1]:18789 only - no external exposure",
-    "Load average rose sharply overnight (3.98/4.55/4.45, up from 1.65/1.35/1.20 on 08-28) while CPU usage stayed modest (11% user / 19% sys / 70% idle) - likely transient background activity rather than sustained pressure; watching for recurrence"
+    "Load average normalized to 1.24/1.13/1.07, resolving 08-29's overnight spike (3.98/4.55/4.45); however swap usage rose to 746MB (largest observed since tracking began, up from 81MB on 08-29) - CPU load and memory pressure otherwise look normal, continuing to watch"
   ],
   "last_update": {
-    "timestamp": "2026-08-29T03:00:00+0800",
+    "timestamp": "2026-08-30T03:00:00+0800",
     "source": "cron: dashboard-update",
     "sanitized": true
   }
