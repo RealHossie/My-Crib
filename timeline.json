@@ -363,5 +363,15 @@
     "date": "2026-08-30",
     "event": "Daily status sync: gateway uptime 170h, 514MB RSS (back within the 506-545MB baseline band after two lower-RSS days), 55 memory entries, system memory 33.3% free (5.33GB available), disk 48% used on data volume (107GB free), 12 plugins enabled, 3 agents configured, openclaw v2026.7.1-2 (0790d9f), cron dashboard-update ok (9th consecutive success since timeout fix)",
     "type": "ops"
+  },
+  {
+    "date": "2026-08-31",
+    "event": "Swap usage held essentially flat at 714MB (vs 08-30's 746MB) - now two consecutive days above 700MB after the initial spike from 81MB on 08-29, suggesting a persistent elevated baseline rather than a one-off event; load average further normalized to 0.91/0.95/0.99 and CPU usage very low (0.6% user / 1.9% sys / 97.5% idle) with no OS memory-pressure warning",
+    "type": "ops"
+  },
+  {
+    "date": "2026-08-31",
+    "event": "Daily status sync: gateway uptime 194h, 536MB RSS (within the 506-545MB baseline band), 55 memory entries, system memory 33.8% free (5.41GB available), disk 49% used on data volume (106GB free), 12 plugins enabled, 3 agents configured, openclaw v2026.7.1-2 (0790d9f), cron dashboard-update ok (10th consecutive success since timeout fix)",
+    "type": "ops"
   }
 ]
